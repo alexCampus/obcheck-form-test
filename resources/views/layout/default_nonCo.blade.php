@@ -14,16 +14,16 @@
 	<!---favicon-->
 	<link rel="icon" href="favicon.ico" />
 
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
 
 
 
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
 	@yield("link")
 </head>
 <body>
@@ -32,7 +32,7 @@
 		<header>
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-2">
-					<a href="accueil_connecte.html"><img src="images/logo_simple_v3.png" alt="logo_obcheck" class="logo"></a>					
+					<a href="accueil_connecte.html"><img src="/images/logo_simple_v3.png" alt="logo_obcheck" class="logo"></a>					
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
 					<h1>obcheck<br><small>Mélange et partage tes Hobbies</small></h1>					

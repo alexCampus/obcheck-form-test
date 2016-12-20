@@ -1,10 +1,13 @@
+
+
+
 @extends('layout.default_nonCo')
 
 @section("link")
 
-<link rel="stylesheet" href="css/msgPop.css">
-<link rel="stylesheet" type="text/css" href="css/tag-basic-style.css">
-<link id="scrollUpTheme" rel="stylesheet" href="css/scrollUp.css">
+<link rel="stylesheet" href="/css/msgPop.css">
+<link rel="stylesheet" type="text/css" href="/css/tag-basic-style.css">
+<link id="scrollUpTheme" rel="stylesheet" href="/css/scrollUp.css">
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 @endsection
 
@@ -12,7 +15,7 @@
 <!-- dropdown Avatar -->
 				<div class="avatar col-lg-2 col-md-2 col-sm-2 col-xs-2 btn-group">
 				  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    <img src="images/shaker.jpg" class="img-responsive header_avatar" alt="photo_avatar"> <span class="caret"></span>
+				    <img src="/images/shaker.jpg" class="img-responsive header_avatar" alt="photo_avatar"> <span class="caret"></span>
 				  	</button>
 				  	<ul class="dropdown-menu">
 				    	<li><a href="user_profil.html">Mon profil</a></li>
@@ -38,7 +41,7 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
 		          </button>
-		          <a href="accueil_connecte.html"><img src="images/logo_simple_v3.png" alt="logo_obcheck" class="logo"></a>
+		          <a href="accueil_connecte.html"><img src="/images/logo_simple_v3.png" alt="logo_obcheck" class="logo"></a>
 		         
 		        </div>
 
