@@ -69,7 +69,7 @@
 
 @endsection
 
-@section('script')
+@section('script_co')
 
 	<!--calendrier-->
 	<script src="js/external/jquery/jquery.js"></script>
@@ -87,5 +87,7 @@
 		$ ("#date").datepicker(datePickerOptions);
 		
 	});
+
+	</script>
 
 @endsection
