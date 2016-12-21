@@ -7,3 +7,4 @@ Homestead.yaml
 .env
 /php.ini
 composer.phar
+Thumbs.db

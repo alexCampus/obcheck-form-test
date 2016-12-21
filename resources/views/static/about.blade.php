@@ -1,4 +1,4 @@
-@extends(isset($name) ? 'layouts.default_connect' : 'layouts.default')
+@extends(isset($pseudo) ? 'layout.default_co' : 'layout.default_nonCo')
 
 
 
