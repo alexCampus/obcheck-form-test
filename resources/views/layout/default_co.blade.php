@@ -178,6 +178,8 @@
 	    });
 </script>
 
-    </script>
+@yield('script_co')
+
+  
 
 @endsection

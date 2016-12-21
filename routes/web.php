@@ -44,7 +44,7 @@ Route::get('/reinitialisation', function () {
 });
 
 Route::get('/admin/post', function () {
-    return view('admin.admin_page_post');
+    return view('admin.admin_page_posts');
 });
 
 Route::get('/admin/events', function () {
