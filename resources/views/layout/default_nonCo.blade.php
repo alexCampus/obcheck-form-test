@@ -37,6 +37,7 @@
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
 					<h1>obcheck<br><small>Mélange et partage tes Hobbies</small></h1>					
 				</div>
+				@yield("btn_login")
 				@yield("dropdown_user")
 
 			</div>
