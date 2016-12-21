@@ -64,6 +64,20 @@
 		      </div>
 		    </nav>
 @endsection
+{{-- @section ("content")
+<div class="row">    		
+    		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+    			<div class="widget">
+    				<h3>Shaker</h3>
+    				<img src="images/shaker.jpg" class="img-responsive center-block" alt="Ma photo">
+    				<div class="pseudo_widget">
+    				</div>		
+    			</div>
+			</div>
+			@yield("child_content")
+</div>
+
+@endsection --}}
 
 @section("scripts")
 <script type="text/javascript" src="js/verifAccueilConnectJquery.js"></script>
