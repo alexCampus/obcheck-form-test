@@ -11,10 +11,10 @@
 			<div class="row contenu_publication">
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
 					<div class="avatar_container">
-						<img src="images/shaker.jpg" alt="Avatar" class="avatar_publication" />
+						<img src="/images/shaker.jpg" alt="Avatar" class="avatar_publication" />
 					</div>
 					<div class="pseudo_publication">
-					<a href="visit_friends.html">Shaker</a>
+					<a href="/amis/shaker">Shaker</a>
 					</div>
 				</div>
 				<div class="text_publication col-lg-10 col-md-10 col-sm-10 col-xs-9">
@@ -41,9 +41,9 @@
 					<div class="row contenu_commentaire">
 
 						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
-	    					<img src="images/chien.jpg" alt="Avatar" class="avatar_commentaire" />
+	    					<img src="/images/chien.jpg" alt="Avatar" class="avatar_commentaire" />
 	    					<div class="pseudo_commentaire">	
-	    						<a href="visit_friends.html">Hobby</a>
+	    						<a href="/amis/shaker">Hobby</a>
     						</div>
     					</div>
 	    					<div class="text_publication col-lg-10 col-md-10 col-sm-10 col-xs-9">
@@ -60,9 +60,9 @@
 
 					<div class="row contenu_commentaire">
 						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
-							<img src="images/shaker.jpg" alt="Avatar" class="avatar_commentaire" />
+							<img src="/images/shaker.jpg" alt="Avatar" class="avatar_commentaire" />
 	    					<div class="pseudo_commentaire">
-	    						<a href="visit_friends.html">Shaker</a>
+	    						<a href="/amis/shaker">Shaker</a>
     						</div>
     					</div>
     					<div class="text_publication col-lg-10 col-md-10 col-sm-10 col-xs-9">
@@ -81,10 +81,10 @@
 			<div class="row contenu_publication">
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
 					<div class="avatar_container">
-						<img src="images/shaker.jpg" alt="Avatar" class="avatar_publication" />
+						<img src="/images/shaker.jpg" alt="Avatar" class="avatar_publication" />
 					</div>
 					<div class="pseudo_publication">
-					<a href="visit_friends.html">Shaker</a>
+					<a href="/amis/shaker">Shaker</a>
 					</div>
 				</div>
 				<div class="text_publication col-lg-10 col-md-10 col-sm-10 col-xs-9">
@@ -109,10 +109,10 @@
 			<div class="row contenu_publication">
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
 					<div class="avatar_container">
-						<img src="images/shaker.jpg" alt="Avatar" class="avatar_publication" />
+						<img src="/images/shaker.jpg" alt="Avatar" class="avatar_publication" />
 					</div>
 					<div class="pseudo_publication">
-					<a href="visit_friends.html">Shaker</a>
+					<a href="/amis/shaker">Shaker</a>
 					</div>
 				</div>
 				<div class="text_publication col-lg-10 col-md-10 col-sm-10 col-xs-9">
@@ -138,10 +138,10 @@
 			<div class="row contenu_publication">
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
 					<div class="avatar_container">
-						<img src="images/shaker.jpg" alt="Avatar" class="avatar_publication" />
+						<img src="/images/shaker.jpg" alt="Avatar" class="avatar_publication" />
 					</div>
 					<div class="pseudo_publication">
-					<a href="visit_friends.html">Shaker</a>
+					<a href="/amis/shaker">Shaker</a>
 					</div>
 				</div>
 				<div class="text_publication col-lg-10 col-md-10 col-sm-10 col-xs-9">

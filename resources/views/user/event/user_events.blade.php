@@ -25,9 +25,9 @@
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<h2>Je Participe</h2>
 					<ol>
-						<li><a href="visit_user_event.html">Festival Avignon</a></li>
-						<li><a href="visit_user_event.html">Rando Vercors</a></li>
-						<li><a href="visit_user_event.html">Vernissage Lisa</a></li>
+						<li><a href="/evenements/1">Festival Avignon</a></li>
+						<li><a href="/evenements/1">Rando Vercors</a></li>
+						<li><a href="/evenements/1">Vernissage Lisa</a></li>
 					</ol>
 				</div>
 			</div>

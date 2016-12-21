@@ -21,13 +21,13 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 align_bouton_friends">
 				<div class="dropdown">
-					<a href="visit_friends.html">Merlin</a>
+					<a href="/amis/merlin">Merlin</a>
 					<div>
 					  	<button type="button" class="btn btn-ami dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    	<img src="images/merlin.jpg" class="img-responsive avatar_user_friends" alt="photo_avatar"> <span class="caret"></span>
+					    	<img src="/images/merlin.jpg" class="img-responsive avatar_user_friends" alt="photo_avatar"> <span class="caret"></span>
 					  	</button>
 					  	<ul class="dropdown-menu notif">
-					  		<li><a href="visit_friends.html">Accéder à son historique</a></li>
+					  		<li><a href="/amis/merlin">Accéder à son historique</a></li>
 					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Suivre les actus</li>
 					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Voir les événements</li>
 					    	<li><a href="#">Retirer de la liste d'amis</a></li>
@@ -37,13 +37,13 @@
 			</div>						 
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 align_bouton_friends">	
 				<div class="dropdown">
-					<a href="visit_friends.html">Chaton</a>
+					<a href="/amis/merlin">Chaton</a>
 					<div>
 					  	<button type="button" class="btn btn-ami dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    	<img src="images/chaton.jpg" class="img-responsive avatar_user_friends" alt="photo_avatar"> <span class="caret"></span>
+					    	<img src="/images/chaton.jpg" class="img-responsive avatar_user_friends" alt="photo_avatar"> <span class="caret"></span>
 					  	</button>
 					  	<ul class="dropdown-menu">
-					  		<li><a href="visit_friends.html">Accéder à son historique</a></li>
+					  		<li><a href="/amis/merlin">Accéder à son historique</a></li>
 					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Suivre les actus</li>
 					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Voir les événements</li>
 					    	<li><a href="#">Retirer de la liste d'amis</a></li>
@@ -53,13 +53,13 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 align_bouton_friends">
 				<div class="dropdown">
-					<a href="visit_friends.html">Hobby</a>
+					<a href="/amis/merlin">Hobby</a>
 					<div>
 					  	<button type="button" class="btn btn-ami dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    	<img src="images/chien.jpg" class="img-responsive avatar_user_friends" alt="photo_avatar"> <span class="caret"></span>
+					    	<img src="/images/chien.jpg" class="img-responsive avatar_user_friends" alt="photo_avatar"> <span class="caret"></span>
 					  	</button>
 					  	<ul class="dropdown-menu">
-					  		<li><a href="visit_friends.html">Accéder à son historique</a></li>
+					  		<li><a href="/amis/merlin">Accéder à son historique</a></li>
 					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Suivre les actus</li>
 					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Voir les événements</li>
 					    	<li><a href="#">Retirer de la liste d'amis</a></li>
@@ -69,13 +69,13 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 align_bouton_friends">
 				<div class="dropdown">
-					<a href="visit_friends.html">Ema</a>
+					<a href="/amis/merlin">Ema</a>
 					<div>
 					  	<button type="button" class="btn btn-ami dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    	<img src="images/chien.jpg" class="img-responsive avatar_user_friends" alt="photo_avatar"> <span class="caret"></span>
+					    	<img src="/images/chien.jpg" class="img-responsive avatar_user_friends" alt="photo_avatar"> <span class="caret"></span>
 					  	</button>
 					  	<ul class="dropdown-menu">
-					  		<li><a href="visit_friends.html">Accéder à son historique</a></li>
+					  		<li><a href="/amis/merlin">Accéder à son historique</a></li>
 					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Suivre les actus</li>
 					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Voir les événements</li>
 					    	<li><a href="#">Retirer de la liste d'amis</a></li>
