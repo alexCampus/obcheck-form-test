@@ -4,9 +4,10 @@
 
 
 
-@section('user_content')		
-    <div class=" bloc_fil_actu">
-		<div class="col-lg-7 col-md-9 col-sm-12 col-xs-12">
+@section('user_content')
+<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">		
+    <div class=" bloc_fil_actu padding_1">
+		
 			<div class="pseudo_info">
 				<h4>Mes Informations Personnelles</h4>
 					<p> pseudo : Shaker</p>
