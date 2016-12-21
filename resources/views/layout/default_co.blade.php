@@ -1,6 +1,3 @@
-
-
-
 @extends('layout.default_nonCo')
 
 @section("link")
