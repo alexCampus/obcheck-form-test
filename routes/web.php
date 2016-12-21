@@ -84,7 +84,7 @@ Route::get('/profil/modification', function () {
 });
 
 Route::get('/evenements/{id}', function ($id) {
-    return view('user.event.visit_user_event');
+    return view('user.event.visit_user_event', ['id' => $id]);
 });
 
 Route::get('/amis/{pseudo_amis}', function ($pseudo_amis) {
