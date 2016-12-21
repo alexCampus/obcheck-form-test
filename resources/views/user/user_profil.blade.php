@@ -8,12 +8,12 @@
     			<div class="widget notif">
     				<h3>Ma Page</h3>
     				
-    				<img src="images/shaker.jpg" class="img-responsive center-block" alt="Ma_photo">
-    				<span class="glyphicon glyphicon-pencil btn-default btn-xs fil_ariane"><a href="info_user.html">modifier ma photo</a></span>
+    				<img src="/images/shaker.jpg" class="img-responsive center-block" alt="Ma_photo">
+    				<span class="glyphicon glyphicon-pencil btn-default btn-xs fil_ariane"><a href="/profil/modification">modifier ma photo</a></span>
 
     				<div class="pseudo_widget">
     					<p> Pseudo: Shaker</p>
-    					<a class="btn btn-default btn-xs" href="info_user.html">Modifier</a>
+    					<a class="btn btn-default btn-xs" href="/profil/modification">Modifier</a>
     				</div>	
     			</div>
 			</div>
@@ -21,11 +21,11 @@
     			<div class="row">
 		    		<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-3 col-lg-10 col-md-10 col-sm-11 col-xs-12">
 		    			<ul class="nav nav-tabs">
-						  	<li role="presentation" class="active"><a href="user_profil.html">Mon profil</a></li>
-						  	<li role="presentation"><a href="user_events.html">Mes événements</a></li>
-						  	<li role="presentation"><a href="user_historique.html">Mon historique</a></li>
-						  	<li role="presentation"><a href="user_friends.html">Mes amis</a></li>
-						  	<li><a href="create_event.html">Nouvel évènement</a></li>
+						  	<li role="presentation" class="active"><a href="/profil">Mon profil</a></li>
+						  	<li role="presentation"><a href="/evenements">Mes événements</a></li>
+						  	<li role="presentation"><a href="/historique">Mon historique</a></li>
+						  	<li role="presentation"><a href="/amis">Mes amis</a></li>
+						  	<li><a href="/evenements/nouveau">Nouvel évènement</a></li>
 						</ul>
 					</div>
 				</div>
@@ -86,7 +86,7 @@
 				</div>
 			</div>    		
     		<div class="col-lg-3 col-md-3 col-sm-5 pub_widget">
-				<img src="images/pub2.jpg" alt="publicités">
+				<img src="/images/pub2.jpg" alt="publicités">
 			</div>
     	</div>
 @endsection
