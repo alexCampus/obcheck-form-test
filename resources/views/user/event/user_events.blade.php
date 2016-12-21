@@ -1,6 +1,10 @@
 @extends('layout.default_user')
 @section('title','evenements')
 
+@section('eventClass')
+	{{ $classActive }}
+@endsection
+
 @section('user_content')
 
 	<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">	

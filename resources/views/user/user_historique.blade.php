@@ -1,6 +1,8 @@
 @extends('layout.default_user')
 
-
+@section('histoClass')
+	{{ $classActive }}
+@endsection
 	   	    
 @section('user_content')
 

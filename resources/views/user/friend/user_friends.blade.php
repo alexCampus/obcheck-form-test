@@ -1,7 +1,10 @@
 @extends('layout.default_user')
 @section('title','amis')
 
-		
+@section('friendClass')
+	{{$classActive}}
+@endsection
+*		
 @section('user_content')	   
 		
 	<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">

@@ -6,6 +6,10 @@
 	<link href="/css/jquery-ui.css" rel="stylesheet">
 @endsection
 
+@section('newEventClass')
+	{{ $classActive }}
+@endsection
+
 @section('user_content')		
 	   	    
 	<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">

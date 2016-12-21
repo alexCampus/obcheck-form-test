@@ -2,9 +2,12 @@
 
 @section('title','profil')
 
-
+@section('profilClass')
+	{{ $classActive }}
+@endsection
 
 @section('user_content')
+
 <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">		
     <div class=" bloc_fil_actu padding_1">
 		

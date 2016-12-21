@@ -21,11 +21,11 @@
 		<div class="row">
     		<div class="col-lg-offset-1 col-md-offset-2 col-sm-offset-3 col-lg-7 col-md-10 col-sm-11 col-xs-12">
     			<ul class="nav nav-tabs">
-				  	<li role="presentation" class="active"><a href="/profil">Mon profil</a></li>
-				  	<li role="presentation"><a href="/evenements">Mes événements</a></li>
-				  	<li role="presentation"><a href="/historique">Mon historique</a></li>
-				  	<li role="presentation"><a href="/amis">Mes amis</a></li>
-				  	<li><a href="/evenements/nouveau">Nouvel évènement</a></li>
+				  	<li role="presentation" class=" @yield('profilClass') "><a href="/profil">Mon profil</a></li>
+				  	<li role="presentation" class=" @yield('eventClass') "><a href="/evenements">Mes événements</a></li>
+				  	<li role="presentation" class=" @yield('histoClass') "><a href="/historique">Mon historique</a></li>
+				  	<li role="presentation" class=" @yield('friendClass') "><a href="/amis">Mes amis</a></li>
+				  	<li role="presentation" class=" @yield('newEventClass') "><a href="/evenements/nouveau">Nouvel évènement</a></li>
 				</ul>
 			</div>
 		</div>
