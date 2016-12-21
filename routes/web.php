@@ -88,7 +88,7 @@ Route::get('/evenements/{id}', function ($id) {
 });
 
 Route::get('/amis/{pseudo_amis}', function ($pseudo_amis) {
-    return view('user.friend.visit_friends');
+    return view('user.friend.visit_friends', ['name' => $pseudo_amis]);
 });
 
 Route::get('/{pseudo}', function ($pseudo) {
