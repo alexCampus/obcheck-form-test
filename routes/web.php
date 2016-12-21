@@ -16,85 +16,84 @@ Route::get('/', function () {
 });
 
 Route::get('/faq', function () {
-    return view('faq');
+    return view('static.faq');
 });
 
 Route::get('/cgu', function () {
-    return view('cgu');
+    return view('static.cgu');
 });
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('static.contact');
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('static.about');
 });
 
 Route::get('/connexion', function () {
-    return view('connexion');
+    return view('login.connexion');
 });
 
 Route::get('/inscription', function () {
-    return view('inscription');
+    return view('login.inscription');
 });
 
-Route::get('/new_password', function () {
-    return view('oubli_mot_de_passe');
+Route::get('/reinitialisation', function () {
+    return view('login.oubli_mot_de_passe');
 });
 
-Route::get('/admin_post', function () {
-    return view('admin_page_post');
+Route::get('/admin/post', function () {
+    return view('admin.admin_page_post');
 });
 
-Route::get('/admin_events', function () {
-    return view('admin_page_events');
+Route::get('/admin/events', function () {
+    return view('admin.admin_page_events');
 });
 
-Route::get('/admin_tags', function () {
-    return view('admin_page_tags');
+Route::get('/admin/tags', function () {
+    return view('admin.admin_page_tags');
 });
 
-Route::get('/toto', function () {
-    return view('accueil_connecte');
+Route::get('/messagerie', function () {
+    return view('user.user_messaging');
 });
 
-Route::get('/toto/messagerie', function () {
-    return view('user_messaging');
+Route::get('/amis', function () {
+    return view('user.friend.user_friends');
 });
 
-Route::get('/toto/amis', function () {
-    return view('user_friends');
+Route::get('/evenements', function () {
+    return view('user.event.user_events');
 });
 
-Route::get('/toto/amis/0', function () {
-    return view('visit_friends');
+Route::get('/evenements/nouveau', function () {
+    return view('user.event.create_event');
 });
 
-Route::get('/toto/evenements', function () {
-    return view('user_events');
+Route::get('/historique', function () {
+    return view('user.user_historique');
 });
 
-Route::get('/toto/evenements/nouveau', function () {
-    return view('create_event');
+Route::get('/profil', function () {
+    return view('user.user_profil');
 });
 
-Route::get('/toto/evenements/0', function () {
-    return view('visit_user_event');
+Route::get('/profil/modification', function () {
+    return view('user.info_user');
 });
 
-Route::get('/toto/historique', function () {
-    return view('user_historique');
+Route::get('/evenements/{id}', function ($id) {
+    return view('user.event.visit_user_event');
 });
 
-Route::get('/toto/profil', function () {
-    return view('user_profil');
+Route::get('/amis/{pseudo_amis}', function ($pseudo_amis) {
+    return view('user.friend.visit_friends');
 });
 
-Route::get('/toto/profil/modification', function () {
-    return view('info_user');
+Route::get('/{pseudo}', function ($pseudo) {
+    return view('user.accueil_connecte');
 });
-
 
 
 
