@@ -3,7 +3,7 @@
 @section('title', 'Evenement')
 
 @section('link')
-	<link href="css/jquery-ui.css" rel="stylesheet">
+	<link href="/css/jquery-ui.css" rel="stylesheet">
 @endsection
 
 @section('user_content')		
@@ -73,7 +73,7 @@
 
 	
 @section('script_co')	
-	<script type="text/javascript" src="js/func.js"></script>
+	<script type="text/javascript" src="/js/func.js"></script>
 
 	<!--calendrier-->	
 	<script>
