@@ -5,6 +5,10 @@
     src: url('../fonts/MonoglycerideBold.ttf');
 }
 
+.navbar-nav {
+	margin: 7.5px 0;
+}
+
 .fil_ariane{
 font-size:12px;
 background-color:black;
