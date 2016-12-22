@@ -92,8 +92,8 @@ Route::get('/amis/{pseudo_amis}', function ($pseudo_amis) {
 });
 
 Route::get('/{pseudo}', function ($pseudo) {
-    return view('user.accueil_connecte');
-});
-
+   return view('user.accueil_connecte');
+    
+})->where('pseudo', '^[A-Za-z0-9]{1,20}$');
 
 
