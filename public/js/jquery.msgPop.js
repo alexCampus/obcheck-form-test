@@ -10,7 +10,7 @@ function initMsgPop()
 	
 	//Public properties
 	MsgPop.effectSpeed = 250;
-	MsgPop.limit = 2;
+	MsgPop.limit = 1;
 	MsgPop.displaySmall = false;
 	MsgPop.position = "top-right";
 	
