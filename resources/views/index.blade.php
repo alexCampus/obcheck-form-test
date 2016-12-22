@@ -108,6 +108,8 @@
 	
 
 <!--Jquery-->
+@section('scripts')
+<script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
         	$("#slideShow").waterwheelCarousel({
@@ -116,3 +118,4 @@
 
 		});
     </script>
+    @endsection
