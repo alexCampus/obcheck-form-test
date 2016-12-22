@@ -315,8 +315,9 @@ header h2{
 	font-size: 2.2em;
 	color:#404276;
 }
-.index_text li {
+.index_text ul {
 	list-style-type: none;
+	padding: 0;
 }
 
 

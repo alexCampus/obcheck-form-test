@@ -22,7 +22,7 @@
 				<button class="btn btn-default btn-lg"><span class="glyphicon glyphicon-refresh"></span></button>
 					
 			</div>
-			<div class="widget">
+			<div class="widget index_text">
 				<h3>Évenements suggérés</h3>
 				<ul>
 					<li>Sortie à la mer le 28/10/2016<hr></li>

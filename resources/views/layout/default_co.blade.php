@@ -28,6 +28,7 @@
 					<span class="glyphicon glyphicon-envelope notif" aria-hidden="true"><a href="/messagerie">Messages</a></span>
 					<a href="/" class="btn btn-default btn-logout" role="button">Se déconnecter</a>
 				</div>
+				
 @endsection
 
 @section ('navbar')
