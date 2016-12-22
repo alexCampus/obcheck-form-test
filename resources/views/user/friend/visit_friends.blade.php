@@ -121,14 +121,9 @@
 						</div>
 					</div>
     			</div>
-				<a class="button" href="user_friends.html">Retour à la liste de mes amis</a>
+				<a class="button" href="/amis">Retour à la liste de mes amis</a>
 			</div>	
-		</div>
-
-		<div class="col-lg-3 col-md-3 col-sm-5 pub_widget">
-			<img src="/images/pub2.jpg" alt="publicités">
-		</div>	    		
-    	
+		</div>    	
     </div>
 
 	@endsection
