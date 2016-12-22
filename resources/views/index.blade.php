@@ -25,31 +25,31 @@
  					<!-- Wrapper for slides -->
 	  		<div class="carousel-inner" role="listbox">
 	    		<div class="item active">
-			      		<img src="images/autumn.jpg" alt="">
+			      		<img src="/images/autumn.jpg" alt="">
 			     	<div class="carousel-caption">
 			     	</div>
 	  			</div>
 
 		    	<div class="item">
-				      	<img src="images/florence.jpg" alt="concert">
+				      	<img src="/images/florence.jpg" alt="concert">
 				     <div class="carousel-caption">
 				    </div>
 		    	</div>
 
 		    	<div class="item">
-		      			<img src="images/lake.jpg" alt="">
+		      			<img src="/images/lake.jpg" alt="">
 		      		<div class="carousel-caption">
 		      		</div>
 		    	</div>
 
 		    	<div class="item">
-		      			<img src="images/vienna.jpg" alt="tour_eiffel">
+		      			<img src="/images/vienna.jpg" alt="tour_eiffel">
 		      		<div class="carousel-caption">
 		      		</div>
 		    	</div>
 
 		    	<div class="item">
-			      	<img src="images/motorcup.jpg" alt="Flower">
+			      	<img src="/images/motorcup.jpg" alt="Flower">
 			      	<div class="carousel-caption">
 			      	</div>
 		    	</div>
@@ -91,15 +91,15 @@
 			</div>
 			<div class="col-lg-10 col-md-10 hidden-sm hidden-xs">
 				<div id="slideShow">
-			      <img src="images/1.jpg" id="item-1" />
-			      <img src="images/2.jpg" id="item-2" />
-			      <img src="images/3.jpg" id="item-3" />
-			      <img src="images/4.jpg" id="item-4" />
-			      <img src="images/5.jpg" id="item-5" />
-			      <img src="images/6.jpg" id="item-6" />
-			      <img src="images/7.jpg" id="item-7" />
-			      <img src="images/8.jpg" id="item-8" />
-			      <img src="images/9.jpg" id="item-9" />
+			      <img src="/images/1.jpg" id="item-1" />
+			      <img src="/images/2.jpg" id="item-2" />
+			      <img src="/images/3.jpg" id="item-3" />
+			      <img src="/images/4.jpg" id="item-4" />
+			      <img src="/images/5.jpg" id="item-5" />
+			      <img src="/images/6.jpg" id="item-6" />
+			      <img src="/images/7.jpg" id="item-7" />
+			      <img src="/images/8.jpg" id="item-8" />
+			      <img src="/images/9.jpg" id="item-9" />
 	   			</div>
 	   		</div>
 		</div>	
