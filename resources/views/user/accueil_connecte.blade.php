@@ -2,6 +2,11 @@
 
 @section('title','accueil connecté')
 
+@section('accueilConnecteClass')
+	{{ $classActive }}
+@endsection
+
+
 @section('content')
 		  
     <div class="row">	    	 

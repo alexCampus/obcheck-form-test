@@ -2,7 +2,9 @@
 
 @section('title', 'messagerie')
  	
-
+@section('messagingClass')
+	{{ $classActive }}
+@endsection
 
 @section('content')
 
