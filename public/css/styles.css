@@ -253,7 +253,7 @@ header {
 	padding: 1%;
 	align-items: center;
 }
- header .vcenter {
+ .vcenter {
  	padding-right: 0;
     display: inline-block;
     vertical-align: middle;

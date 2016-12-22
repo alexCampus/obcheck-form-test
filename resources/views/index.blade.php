@@ -84,12 +84,12 @@
 		</div>	
 				
 		<div class="row">		
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 tweet">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 tweet vcenter">
 				<h3>Tweet de obcheck</h3>
 		        <a class="twitter-timeline" href="https://twitter.com/hashtag/digigre" data-widget-id="790530927889973248">Tweets sur #digigre</a>
             	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>          
 			</div>
-			<div class="col-lg-10 col-md-10 hidden-sm hidden-xs">
+			<div class="col-lg-9 col-md-9 hidden-sm hidden-xs vcenter">
 				<div id="slideShow">
 			      <img src="/images/1.jpg" id="item-1" />
 			      <img src="/images/2.jpg" id="item-2" />
@@ -100,7 +100,8 @@
 			      <img src="/images/7.jpg" id="item-7" />
 			      <img src="/images/8.jpg" id="item-8" />
 			      <img src="/images/9.jpg" id="item-9" />
-	   			</div>
+	   			</div> 
+	   			<div class="clear"></div>
 	   		</div>
 		</div>	
 @endsection
@@ -108,6 +109,8 @@
 	
 
 <!--Jquery-->
+@section('scripts')
+<script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
         	$("#slideShow").waterwheelCarousel({
@@ -116,3 +119,4 @@
 
 		});
     </script>
+    @endsection
