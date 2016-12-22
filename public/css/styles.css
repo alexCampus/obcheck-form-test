@@ -6,7 +6,7 @@
 }
 
 .navbar-nav {
-	margin: 7.5px 0;
+	margin: 0;
 }
 
 .fil_ariane{
@@ -227,6 +227,16 @@ background:#596888 ;
 .create_event {
 	padding-top:15px;
 }
+
+
+
+#categorie {
+	height: 50px;
+	margin: 10px 0px 0px 0px;
+	border-radius: 6px;
+
+}
+
 /*-------Carousel------*/
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {

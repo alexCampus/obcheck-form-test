@@ -1,7 +1,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8" />
-	<title>obcheck - @yield('title')</title>
+	<title>Obcheck - @yield('title')</title>
 
 	<!--meta-->
 	<meta name="viewport" content="width=device-width" />
@@ -35,7 +35,7 @@
 					<a href="/toto"><img src="/images/logo_simple_v3.png" alt="logo_obcheck" class="logo"></a>					
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 vcenter">
-					<h1>obcheck</h1><h2>Mélange et partage tes Hobbies</h2>			
+					<h1>Obcheck</h1><h2>Mélange et partage tes Hobbies</h2>			
 				</div>
 
 				@yield("btn_login")

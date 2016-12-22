@@ -1,5 +1,7 @@
 @extends('layout.default_user')
 
+@section('title', 'Historique')
+
 @section('histoClass')
 	{{ $classActive }}
 @endsection
