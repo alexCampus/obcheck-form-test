@@ -1,6 +1,6 @@
 @extends('layout.default_user')
 
-@section('title', 'profil')
+@section('title', 'profil_modification')
 
 @section('link')
 	<link href="/css/jquery-ui.css" rel="stylesheet">

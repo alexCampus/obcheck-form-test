@@ -47,9 +47,9 @@
 
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav">
-		            <li class="active"><a href="/toto">Accueil</a></li>
-		            <li><a href="/messagerie">Messagerie</a></li>
-		            <li><a href="/evenements/nouveau">Créer un événement</a></li>
+		            <li class="@yield('accueilConnecteClass')" ><a href="/toto">Accueil</a></li>
+		            <li class="@yield('messagingClass')" ><a href="/messagerie" >Messagerie</a></li>
+		            <li class="@yield('newEventClass')" ><a href="/evenements/nouveau">Créer un événement</a></li>
 		          </ul>
 		          <ul class="nav navbar-nav navbar-right">
 		            <li class="dropdown">
