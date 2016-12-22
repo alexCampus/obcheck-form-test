@@ -77,7 +77,6 @@
 
 	
 @section('script_co')	
-	<script type="text/javascript" src="/js/func.js"></script>
 
 	<!--calendrier-->	
 	<script>
