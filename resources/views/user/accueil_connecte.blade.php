@@ -93,12 +93,36 @@
 								
 							</label>
 						</div>
-						<div class="form-group">
-							<div class="ui-widget">
-								<label for="tags">Tags : </label>
-								<div data-tag-box-class="tagging" id="chouchou" class="ui-autocomplete-input form-control" name="tag" autocomplete="off">Pokemon</div>
+
+						<div class="row">
+							<div class="col-lg-4 col-md-4 vcenter">
+								<div class="form-group">
+									<label for="categorie">Catégorie :</label>
+										<select class="form-control" id="categorie" name="categorie" required>
+											 	<option disabled selected value="0"> selectionner une option</option>
+											 	<option value="1">Animaux</option>
+											 	<option value="2">Gastronomie</option>
+											 	<option value="3">Loisirs Créatifs</option>
+											 	<option value="4">Maison</option>
+											 	<option value="5">Multimédia</option>
+											 	<option value="6">Musique</option>
+											 	<option value="7">Nature</option>
+											 	<option value="8">Sports</option>
+											 	<option value="9">Véhicules</option>
+											  	<option value="10">Voyages</option>									  	
+										</select>
+									
+								</div>
 							</div>
-							
+							<div class="col-lg-7 col-md-7 vcenter">
+								<div class="form-group">
+									<div class="ui-widget">
+										<label for="tags">Tags : </label>
+										<div data-tag-box-class="tagging" id="chouchou" class="ui-autocomplete-input form-control" name="tag" autocomplete="off">Pokemon</div>
+									</div>
+									
+								</div>
+							</div>
 						</div>
 						<input type="submit" class="btn btn-default btn-sm" name="submit" value="Publier">
 	    		</form>
