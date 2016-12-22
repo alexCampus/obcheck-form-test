@@ -51,7 +51,7 @@
 								</div>				 
 								<input type="submit" class="btn btn-default" value="Connexion">
 							</form>
-							<a href="accueil_connecte.html">Connexion accueil connecté</a>
+							<a href="/toto">Connexion accueil connecté</a>
 						</fieldset>
 
 					</div>
@@ -72,8 +72,8 @@
 @section('scripts')
 
 	<!--calendrier-->
-	<script src="js/external/jquery/jquery.js"></script>
-	<script src="js/jquery-ui.js"></script>
+	<script src="/js/external/jquery/jquery.js"></script>
+	<script src="/js/jquery-ui.js"></script>
 	<script>
 
 	var datePickerOptions = {
