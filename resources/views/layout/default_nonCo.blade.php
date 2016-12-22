@@ -31,11 +31,11 @@
 	
 		<header>
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-2">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-2 vcenter">
 					<a href="/toto"><img src="/images/logo_simple_v3.png" alt="logo_obcheck" class="logo"></a>					
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
-					<h1>obcheck<br><small>Mélange et partage tes Hobbies</small></h1>					
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 vcenter">
+					<h1>obcheck</h1><br><h2>Mélange et partage tes Hobbies</h2>			
 				</div>
 
 				@yield("btn_login")

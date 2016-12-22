@@ -3,7 +3,7 @@
 @section('title','accueil_non_co')
 
 @section("btn_login")
-	<div class="col-lg-3 col-md-3 col-xs-2">
+	<div class="col-lg-2 col-md-2 col-xs-2 vcenter">
 		<a href="/connexion" class="btn btn-default btn-logout notif" role="button"> Connecte-toi </a>
 		<a href="/inscription" class="btn btn-default btn-logout notif" role="button"> Inscription </a>
 	</div>

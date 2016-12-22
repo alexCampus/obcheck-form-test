@@ -244,30 +244,41 @@ background:#596888 ;
 /*-------Header -------*/
 
 header {
+	margin-top: 60px;
 	margin-bottom: 5%;	
 	border-radius: 8px;
 	background-image:linear-gradient(to bottom, #BDC0C6 ,#fff 100%);
 	min-width: 545px;
 	min-height: 225px;
+	padding: 1%;
+	align-items: center;
 }
-
-header img {
-	height: 100%;
-
+ header .vcenter {
+ 	padding-right: 0;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
 header h1{	
 	font-family: "MonoglycerideBold";
-	font-size: 5em;
+	font-size: 6em;
 	color:#cf6253;
 	text-align: center;
 	/*margin-top: 5%;
 	padding-top:10%;*/
 }
 
-h1 small{
-	font-size:0.5em;
+
+
+header h2{
+	text-align: center;
+	font-family: "MonoglycerideBold";
+	color: #888;
+	font-size: 2em;
 }
+
+
 .index_text {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3em;
@@ -281,6 +292,8 @@ h1 small{
 .index_text li {
 	list-style-type: none;
 }
+
+
 hr {
     border: 0;
     height: 1px;
