@@ -44,15 +44,15 @@ Route::get('/reinitialisation', function () {
 });
 
 Route::get('/admin/post', function () {
-    return view('admin.admin_page_posts');
+    return view('admin.admin_page_posts', ['classActive' => 'active']);
 });
 
 Route::get('/admin/events', function () {
-    return view('admin.admin_page_events');
+    return view('admin.admin_page_events', ['classActive' => 'active']);
 });
 
 Route::get('/admin/tags', function () {
-    return view('admin.admin_page_tags');
+    return view('admin.admin_page_tags', ['classActive' => 'active']);
 });
 
 Route::get('/messagerie', function () {
