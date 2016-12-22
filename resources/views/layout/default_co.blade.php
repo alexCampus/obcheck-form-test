@@ -24,8 +24,8 @@
 				    	<li><a href="/amis">Mes amis</a></li>
 				    	<li><a href="/evenements/nouveau">Nouvel évènement</a></li>
 				  	</ul>
-				  	<span class="glyphicon glyphicon-globe notif" aria-hidden="true" id="notification"><a href="#">Notifications</a></span>
-					<span class="glyphicon glyphicon-envelope notif" aria-hidden="true"><a href="/messagerie">Messages</a></span>
+					<span class="col-lg-12 glyphicon glyphicon-globe notif" aria-hidden="true" id="notification"><a href="#">Notifications</a></span>
+					<span class="col-lg-12 glyphicon glyphicon-envelope notif" aria-hidden="true"><a href="/messagerie">Messages</a></span>
 					<a href="/" class="btn btn-default btn-logout" role="button">Se déconnecter</a>
 				</div>
 @endsection

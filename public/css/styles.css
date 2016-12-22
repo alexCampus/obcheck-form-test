@@ -95,6 +95,10 @@ a hover {
 	color:#404276;
 }
 
+.glyphicon-globe {
+	margin :0;
+}
+
 .no_pad {
 	padding: 0%;
 }
@@ -107,7 +111,7 @@ a hover {
 	width: 80%;
 	font-size: 20pt;
 	padding :50px;
-	margin-top: 50px;
+	margin-top: 35px;
 }
 
 .btn-default{
@@ -264,7 +268,7 @@ background:#596888 ;
 
 /*-------Header -------*/
 .logo {
-	width: 100%;
+	width: 75%;
 }
 
 .logo2 {
@@ -284,6 +288,7 @@ header {
     vertical-align: middle;
     float: none;
 }
+
 
 header h1{	
 	font-family: "MonoglycerideBold";
@@ -531,7 +536,6 @@ iframe{
 	margin-right: 1%;
 }
 .notif {
-	margin: 5%;
 	padding: 3%;
 }
 .notif a{
