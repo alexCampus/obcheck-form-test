@@ -1,8 +1,8 @@
-@extends('layout.default_co')
+@extends('layout.default_user')
 
 	@section('title', $name)
 
-	@section('content')
+	@section('user_content')
 	
 	<div class="row">	    	
 		<div class="col-lg-2 col-md-2 col-sm-10 col-xs-10">

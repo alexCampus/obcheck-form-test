@@ -4,8 +4,8 @@
 
 @section("btn_login")
 	<div class="col-lg-3 col-md-3 col-xs-2">
-		<a href="connexion.html" class="btn btn-default btn-logout notif" role="button"> Connecte-toi </a>
-		<a href="inscription.html" class="btn btn-default btn-logout notif" role="button"> Inscription </a>
+		<a href="/connexion" class="btn btn-default btn-logout notif" role="button"> Connecte-toi </a>
+		<a href="/inscription" class="btn btn-default btn-logout notif" role="button"> Inscription </a>
 	</div>
 @endsection
 
