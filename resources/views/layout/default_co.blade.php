@@ -99,7 +99,7 @@
 				MsgPop.open({
 					// Options
 					Type:  "success",
-					Content:"<div><img src='/images/merlin.jpg'> Merlin à liker votre post</div>",
+					Content:"<div><img class='imgNotif' src='/images/merlin.jpg'> Merlin à liker votre post</div>",
 					//AutoClose:false,
 				});	
 			});
