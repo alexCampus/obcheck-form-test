@@ -41,7 +41,7 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
 		          </button>
-		          <a href="/toto"><img src="/images/logo_simple_v3.png" alt="logo_obcheck" class="logo"></a>
+		          <a href="/toto"><img src="/images/logo_simple_v3.png" alt="logo_obcheck" class="logo2"></a>
 		         
 		        </div>
 
