@@ -4,15 +4,7 @@
 
 @section('content')
 		<div class="row">
-	    		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-	    			<div class="widget">
-	    				<h3>Shaker</h3>
-	    				<img src="images/shaker.jpg" class="img-responsive center-block" alt="ma_photo">
-	    				<div class="pseudo_widget">
-	    				</div>
-	    			</div>
-    			</div>
-    			<div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
+    			<div class="col-lg-offset-2 col-lg-7 col-md-8 col-sm-12 col-xs-12">
     				<div class="bloc_fil_actu">
 	    				<h1>Conditions Générales d'Utilisation</h1>
 	    				<h4>ARTICLE 1 : Objet</h4>

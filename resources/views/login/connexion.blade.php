@@ -1,4 +1,4 @@
-@extends('layout.default_co')
+@extends('layout.default_nonCo')
 @section('title','connexion')
 
 @section('content')
@@ -29,8 +29,7 @@
 								  	<input type="submit" class="btn btn-default" value="Se Connecter" >
 							</form>
 						</fieldset>
-							<a href="accueil_connecte.html">Connexion accueil connecté</a><br>
-							<a href="oubli_mot_de_passe.html">Réinitialiser votre mot de passe</a>
+							<a href="/reinitialisation">Réinitialiser votre mot de passe</a>
 					</div>
 					<div class="row">
 						<div class="col-lg-offset-4 col-lg-6 col-md-6 col-sm-6 form_connexion">

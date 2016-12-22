@@ -60,23 +60,23 @@ Route::get('/messagerie', function () {
 });
 
 Route::get('/amis', function () {
-    return view('user.friend.user_friends');
+    return view('user.friend.user_friends', ['classActive' => 'active']);
 });
 
 Route::get('/evenements', function () {
-    return view('user.event.user_events');
+    return view('user.event.user_events', ['classActive' => 'active']);
 });
 
 Route::get('/evenements/nouveau', function () {
-    return view('user.event.create_event');
+    return view('user.event.create_event', ['classActive' => 'active']);
 });
 
 Route::get('/historique', function () {
-    return view('user.user_historique');
+    return view('user.user_historique', ['classActive' => 'active']);
 });
 
 Route::get('/profil', function () {
-    return view('user.user_profil');
+    return view('user.user_profil', ['classActive' => 'active']);
 });
 
 Route::get('/profil/modification', function () {
