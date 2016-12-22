@@ -1,4 +1,4 @@
-@extends('layout.default_co')
+@extends('layout.default_nonCo')
 
 @section('title','inscription')
 
@@ -69,7 +69,7 @@
 
 @endsection
 
-@section('script_co')
+@section('scripts')
 
 	<!--calendrier-->
 	<script src="js/external/jquery/jquery.js"></script>

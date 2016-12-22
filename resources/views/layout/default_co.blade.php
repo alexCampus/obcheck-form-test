@@ -180,6 +180,8 @@
 
 @yield('script_co')
 
-  
+
+
+
 
 @endsection
