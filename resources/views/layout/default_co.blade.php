@@ -13,7 +13,7 @@
 
 @section ("dropdown_user")
 <!-- dropdown Avatar -->
-				<div class="avatar col-lg-2 col-md-2 col-sm-2 col-xs-2 btn-group">
+				<div class="avatar col-lg-2 col-md-2 col-sm-2 col-xs-2 btn-group vcenter">
 				  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    <img src="/images/shaker.jpg" class="img-responsive header_avatar" alt="photo_avatar"> <span class="caret"></span>
 				  	</button>
