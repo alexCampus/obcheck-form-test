@@ -44,7 +44,7 @@ Route::get('/reinitialisation', function () {
 });
 
 Route::get('/messagerie', function () {
-    return view('user.user_messaging');
+    return view('user.user_messaging', ['classActive' => 'active']);
 });
 
 Route::get('/historique', function () {
@@ -106,7 +106,7 @@ Route::group(['prefix' => 'admin'], function() {
 });
 
 Route::get('/{pseudo}', function ($pseudo) {
-   return view('user.accueil_connecte');    
+   return view('user.accueil_connecte', ['classActive' => 'active']);    
 })->where('pseudo', '^[A-Za-z0-9]{1,20}$');
 
 

@@ -18,24 +18,24 @@
 						   	<form action="http://campus-numerique-in-the-alps.com/formulaire/index.php" method="post" onsubmit="return verifFormInscription(this)">
 						   		<div class="form-group">
 								 	<label for="pseudo_inscription">Pseudo:</label>
-								    <input type="text" class="form-control" name="pseudo"  placeholder="Pseudo" id="pseudo" onblur="verifPseudo(this)">
+								    <input type="text" class="form-control" name="pseudo" required  placeholder="Pseudo" id="pseudo" onblur="verifPseudo(this)">
 								    <div class="error" id="alert_pseudo"></div>
 								</div>
 								<div class="form-group">
 									<label for="email">Adresse Email:</label>
-									<input type="email" class="form-control" name="email"  placeholder="email" id="email" onblur="verifEmail(this)">
+									<input type="email" class="form-control" name="email" required  placeholder="email" id="email" onblur="verifEmail(this)">
 									<div class="error" id="alert_email"></div>
 								</div>
 								<div class="form-group">
 									<label for="birthday">Date de naissance:</label>
-									<input type="text" class="form-control" name="birthday"   id="date" onblur="verifDate(this)">
+									<input type="text" class="form-control" name="birthday" required   id="date" onblur="verifDate(this)">
 									<div class="error" id="alert_birthday"></div>
 								</div>
 								<div id="complexify">
 									<div classs="form">
 										<div class="form-group">
 											<label for="password">Mot de passe :</label>
-											<input type="password" name="pwd_inscription" class="form-control" id="password" id="pwd_inscription" onblur="verifPassword(this)" onblur="corrMdpControle(this, getElementById('pwd_confirmation'))" placeholder="mot de passe">
+											<input type="password" name="pwd_inscription" required class="form-control" id="password" id="pwd_inscription" onblur="verifPassword(this)" onblur="corrMdpControle(this, getElementById('pwd_confirmation'))" placeholder="mot de passe">
 										</div>
 									</div>
 									<div>
@@ -50,7 +50,7 @@
 								</div>
 								<div class="form-group">
 								    <label for="pwd_confirmation">Confirmation Mot de passe:</label>
-								    <input type="password" class="form-control" name="pwd_confirmation"  placeholder="Confirmation mot de passe" id="pwd_confirmation" onblur="corrMdpControle(this, getElementById('password'))">
+								    <input type="password" class="form-control" name="pwd_confirmation" required  placeholder="Confirmation mot de passe" id="pwd_confirmation" onblur="corrMdpControle(this, getElementById('password'))">
 								    <div class="error" id="alert_pwd_confirmation"></div>
 								</div>				 
 								<input type="submit" class="btn btn-default" value="Connexion">
@@ -74,7 +74,7 @@
 @endsection
 
 @section('scripts')
-	
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
 	<script>
 
 		var datePickerOptions = {
