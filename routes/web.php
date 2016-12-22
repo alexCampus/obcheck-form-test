@@ -43,47 +43,52 @@ Route::get('/reinitialisation', function () {
     return view('login.oubli_mot_de_passe');
 });
 
-
-
-
-
-
 Route::get('/messagerie', function () {
     return view('user.user_messaging');
-});
-
-Route::get('/amis', function () {
-    return view('user.friend.user_friends', ['classActive' => 'active']);
-});
-
-Route::get('/evenements', function () {
-    return view('user.event.user_events', ['classActive' => 'active']);
-});
-
-Route::get('/evenements/nouveau', function () {
-    return view('user.event.create_event', ['classActive' => 'active']);
 });
 
 Route::get('/historique', function () {
     return view('user.user_historique', ['classActive' => 'active']);
 });
 
-Route::get('/profil', function () {
-    return view('user.user_profil', ['classActive' => 'active']);
+//route par group pour profil
+Route::group(['prefix' => 'profil'], function(){
+    Route::get('/', function () {
+        return view('user.user_profil', ['classActive' => 'active']);
+    });
+
+    Route::get('/modification', function () {
+        return view('user.info_user');
+    });
 });
 
-Route::get('/profil/modification', function () {
-    return view('user.info_user');
+//route par group pour evenements
+Route::group(['prefix' => 'evenements'], function(){
+    Route::get('/', function () {
+        return view('user.event.user_events', ['classActive' => 'active']);
+    });
+
+    Route::get('/nouveau', function () {
+        return view('user.event.create_event', ['classActive' => 'active']);
+    });
+
+    Route::get('/{id}', function ($id) {
+        return view('user.event.visit_user_event', ['id' => $id]);
+    });
 });
 
-Route::get('/evenements/{id}', function ($id) {
-    return view('user.event.visit_user_event', ['id' => $id]);
+//route par group pour amis
+Route::group(['prefix' => 'amis'], function(){
+    Route::get('/', function () {
+        return view('user.friend.user_friends', ['classActive' => 'active']);
+    });
+
+    Route::get('/{pseudo_amis}', function ($pseudo_amis) {
+        return view('user.friend.visit_friends', ['name' => $pseudo_amis]);
+    });
 });
 
-Route::get('/amis/{pseudo_amis}', function ($pseudo_amis) {
-    return view('user.friend.visit_friends', ['name' => $pseudo_amis]);
-});
-
+//route par group pour admin
 Route::group(['prefix' => 'admin'], function() {
 
     Route::get('post', function () {
@@ -101,8 +106,7 @@ Route::group(['prefix' => 'admin'], function() {
 });
 
 Route::get('/{pseudo}', function ($pseudo) {
-   return view('user.accueil_connecte');
-    
+   return view('user.accueil_connecte');    
 })->where('pseudo', '^[A-Za-z0-9]{1,20}$');
 
 
