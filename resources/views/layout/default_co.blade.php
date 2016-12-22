@@ -14,20 +14,23 @@
 @section ("dropdown_user")
 <!-- dropdown Avatar -->
 				<div class="avatar col-lg-2 col-md-2 col-sm-2 col-xs-2 btn-group vcenter">
-				  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    <img src="/images/shaker.jpg" class="img-responsive header_avatar" alt="photo_avatar"> <span class="caret"></span>
-				  	</button>
-				  	<ul class="dropdown-menu">
-				    	<li><a href="/profil">Mon profil</a></li>
-				    	<li><a href="/evenements">Mes événements</a></li>
-				    	<li><a href="/historique">Mon historique</a></li>
-				    	<li><a href="/amis">Mes amis</a></li>
-				    	<li><a href="/evenements/nouveau">Nouvel évènement</a></li>
-				  	</ul>
-				  	<span class="glyphicon glyphicon-globe notif" aria-hidden="true" id="notification"><a href="#">Notifications</a></span>
-					<span class="glyphicon glyphicon-envelope notif" aria-hidden="true"><a href="/messagerie">Messages</a></span>
+					<div class='btn-group'>
+					  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <img src="/images/shaker.jpg" class="img-responsive header_avatar" alt="photo_avatar"> <span class="caret"></span>
+					  	</button>
+					  	<ul class="dropdown-menu">
+					    	<li><a href="/profil">Mon profil</a></li>
+					    	<li><a href="/evenements">Mes événements</a></li>
+					    	<li><a href="/historique">Mon historique</a></li>
+					    	<li><a href="/amis">Mes amis</a></li>
+					    	<li><a href="/evenements/nouveau">Nouvel évènement</a></li>
+					  	</ul>
+				  	</div>
+					<span class="col-lg-12 glyphicon glyphicon-globe notif" aria-hidden="true" id="notification"><a href="#">Notifications</a></span>
+					<span class="col-lg-12 glyphicon glyphicon-envelope notif" aria-hidden="true"><a href="/messagerie">Messages</a></span>
 					<a href="/" class="btn btn-default btn-logout" role="button">Se déconnecter</a>
 				</div>
+				
 @endsection
 
 @section ('navbar')
@@ -70,105 +73,30 @@
 
 
 @section("scripts")
-<script type="text/javascript" src="/js/verifAccueilConnectJquery.js"></script>
+	<script type="text/javascript" src="/js/verifAccueilConnectJquery.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	
 
 	<!--Plugin Jquery Tag-->
-	<script type="text/javascript" src="/js/tagging.min.js"></script>
-	
+	<script type="text/javascript" src="/js/tagging.min.js"></script>	
 	<script type="text/javascript">
 		$("#chouchou").tagging();
 	</script>
 
 	<!--plugin notif-->
 	<script src="/js/jquery.msgPop.js"></script>
-	<script type="text/javascript">
-		
-			// Set to true to use full width mode
-			MsgPop.displaySmall = true;
+	<script type="text/javascript" src="/js/notifByAmand.js"></script>
+			
 
-			// Custom the postion
-			MsgPop.position = "top-right";
-
-
-
-			// Call the plugin
-			$("#notification").click(function(){
-				var image=$(".img-responsive header_avatar");
-				MsgPop.open({
-					// Options
-					Type:  "success",
-					Content:"<div><img class='imgNotif' src='/images/merlin.jpg'> Merlin à liker votre post</div>",
-					//AutoClose:false,
-				});	
-			});
-	</script>
 
 	<!--Plugin Scroll Up -->
 	<script type="text/javascript" src="/js/jquery.scrollUp.min.js"></script>
-	<script>
-        $(function () {
-            $(function () {
-                    $.scrollUp({
-                        animation: 'fade',
-                        activeOverlay: '#00FFFF',
-                        scrollImg: {
-                            active: true,
-                            type: 'background',
-                            src: 'images/top.png'
-                        }
-                    });
-                });
-                $('#scrollUpTheme').attr('href', '/css/styles.css');          
-        });
+	<script type="text/javascript" src="/js/scrollUpByAlex.js"></script>
+     
+     <!--Plugin autocomplete -->   
+	<script type="text/javascript" src="/js/autocompletByLoic.js"></script>
+		
 
-		var tags = [
-	      "ActionScript",
-	      "AppleScript",
-	      "Asp",
-	      "BASIC",
-	      "C",
-	      "C++",
-	      "Clojure",
-	      "COBOL",
-	      "ColdFusion",
-	      "Erlang",
-	      "Fortran",
-	      "Groovy",
-	      "Haskell",
-	      "Java",
-	      "JavaScript",
-	      "Lisp",
-	      "Perl",
-	      "PHP",
-	      "Python",
-	      "Ruby",
-	      "Scala",
-	      "Julie",
-	      "Cheval",
-	      "Jazz",
-	      "Obcheck",
-	      "Amandine",
-	      "Loïc",
-	      "Alexandre",
-	      "Pokemon",
-	      "Scheme"
-	    ];
-		$( ".type-zone" ).autocomplete({
-	  		source: function( request, response ) {
-			var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
-			response( $.grep( tags, function( item ){
-				return matcher.test( item );
-			}) );
-	     }
-	    });
-</script>
-
-@yield('script_co')
-
-
-
-
+	@yield('script_co')
 
 @endsection

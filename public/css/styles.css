@@ -99,12 +99,23 @@ a hover {
 	color:#404276;
 }
 
+.glyphicon-globe {
+	margin :0;
+}
+
 .no_pad {
 	padding: 0%;
 }
 
 .padding_1 {
 	padding:1%;
+}
+
+.btn-index {
+	width: 80%;
+	font-size: 20pt;
+	padding :50px;
+	margin-top: 35px;
 }
 
 .btn-default{
@@ -261,7 +272,7 @@ background:#596888 ;
 
 /*-------Header -------*/
 .logo {
-	width: 100%;
+	width: 75%;
 }
 
 .logo2 {
@@ -281,6 +292,7 @@ header {
     vertical-align: middle;
     float: none;
 }
+
 
 header h1{	
 	font-family: "MonoglycerideBold";
@@ -528,8 +540,7 @@ iframe{
 	margin-right: 1%;
 }
 .notif {
-	margin: 2%;
-	padding: 1%;
+	padding: 3%;
 }
 .notif a{
 	font-family: 'Open Sans', sans-serif; 	

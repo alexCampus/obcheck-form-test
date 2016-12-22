@@ -31,7 +31,7 @@
 	
 		<header>
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-2 vcenter">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-2 vcenter align_bouton_friends">
 					<a href="/toto"><img src="/images/logo_simple_v3.png" alt="logo_obcheck" class="logo"></a>					
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 vcenter">
