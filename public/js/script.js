@@ -166,14 +166,14 @@ function verifPassword(element) {
 function corrMdpControle(elementControle,elementTemoin) {
 	if (elementControle.value !== elementTemoin.value && elementTemoin.value != "") {
 		document.getElementById("alert_pwd_confirmation").innerHTML="Le mot de passe ne correspont pas !"
-		champ.className="form-control notok";
+		elementControle.className="form-control notok";
 		document.getElementById("alert_pwd_confirmation").style.color="red";
 		return false;
 	} else if (elementTemoin.value == "") {
 		return false;
 	} else {
 		document.getElementById("alert_pwd_confirmation").innerHTML="Ok !";
-		champ.className="form-control ok";
+		elementControle.className="form-control ok";
 		document.getElementById("alert_pwd_confirmation").style.color="green";
 		return true;
 	}
