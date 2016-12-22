@@ -35,7 +35,7 @@
 					<a href="/toto"><img src="/images/logo_simple_v3.png" alt="logo_obcheck" class="logo"></a>					
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 vcenter">
-					<h1>obcheck</h1><br><h2>Mélange et partage tes Hobbies</h2>			
+					<h1>obcheck</h1><h2>Mélange et partage tes Hobbies</h2>			
 				</div>
 
 				@yield("btn_login")
