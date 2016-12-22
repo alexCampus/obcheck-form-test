@@ -103,6 +103,13 @@ a hover {
 	padding:1%;
 }
 
+.btn-index {
+	width: 80%;
+	font-size: 20pt;
+	padding :50px;
+	margin-top: 50px;
+}
+
 .btn-default{
 	color:#fff;
 	background-image:linear-gradient(to bottom, #ef6253 ,#FF7A6B 100%);
@@ -524,8 +531,8 @@ iframe{
 	margin-right: 1%;
 }
 .notif {
-	margin: 2%;
-	padding: 1%;
+	margin: 5%;
+	padding: 3%;
 }
 .notif a{
 	font-family: 'Open Sans', sans-serif; 	
