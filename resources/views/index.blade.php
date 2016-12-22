@@ -10,7 +10,12 @@
 @endsection
 
 @section('content')
-		  
+
+	@if (isset($_GET['erreur'])) 
+		<h2 class="align_bouton_friends"> {{ $_GET["erreur"] }} </h2>
+	@endif 
+	
+
 		<div class="row">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
   					<!-- Indicators -->
