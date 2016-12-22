@@ -49,8 +49,10 @@ class Handler extends ExceptionHandler
             switch ($exception->getStatusCode()) 
                 {
                 // not found
+                
                 case 404:
-                return redirect()->guest('/');
+                $msgError='Ecoute moi bien espece de ...., Chuck Norris va te choper!!!!';
+                return redirect()->guest('/?erreur=' . $msgError);
                 break;
 
                 // internal error
