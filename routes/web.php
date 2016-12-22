@@ -43,17 +43,10 @@ Route::get('/reinitialisation', function () {
     return view('login.oubli_mot_de_passe');
 });
 
-Route::get('/admin/post', function () {
-    return view('admin.admin_page_posts', ['classActive' => 'active']);
-});
 
-Route::get('/admin/events', function () {
-    return view('admin.admin_page_events', ['classActive' => 'active']);
-});
 
-Route::get('/admin/tags', function () {
-    return view('admin.admin_page_tags', ['classActive' => 'active']);
-});
+
+
 
 Route::get('/messagerie', function () {
     return view('user.user_messaging');
@@ -89,6 +82,22 @@ Route::get('/evenements/{id}', function ($id) {
 
 Route::get('/amis/{pseudo_amis}', function ($pseudo_amis) {
     return view('user.friend.visit_friends', ['name' => $pseudo_amis]);
+});
+
+Route::group(['prefix' => 'admin'], function() {
+
+    Route::get('post', function () {
+        return view('admin.admin_page_posts', ['classActive' => 'active']);
+    });
+
+    Route::get('events', function () {
+        return view('admin.admin_page_events', ['classActive' => 'active']);
+    });
+
+    Route::get('tags', function () {
+        return view('admin.admin_page_tags', ['classActive' => 'active']);
+    });
+
 });
 
 Route::get('/{pseudo}', function ($pseudo) {
