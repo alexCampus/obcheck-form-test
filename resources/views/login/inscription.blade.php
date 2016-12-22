@@ -2,6 +2,10 @@
 
 @section('title','inscription')
 
+@section('link')
+	<link href="/css/jquery-ui.css" rel="stylesheet">
+@endsection
+
 @section('content')
 
 		<!--Form Inscription-->
@@ -70,24 +74,20 @@
 @endsection
 
 @section('scripts')
-
-	<!--calendrier-->
-	<script src="/js/external/jquery/jquery.js"></script>
-	<script src="/js/jquery-ui.js"></script>
+	
 	<script>
 
-	var datePickerOptions = {
-				dateFormat: "dd/mm/yy",
-				dayNamesMin: ["Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa"],
-				firstDay: 1,
-				monthNames: [ "Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre" ]
-				};
+		var datePickerOptions = {
+					dateFormat: "dd/mm/yy",
+					dayNamesMin: ["Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa"],
+					firstDay: 1,
+					monthNames: [ "Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre" ]
+					};
 
-	$(function() {
-		$ ("#date").datepicker(datePickerOptions);
-		
-	});
-
+		$(function() {
+			$ ("#date").datepicker(datePickerOptions);
+			
+		});
 	</script>
-
+	
 @endsection
