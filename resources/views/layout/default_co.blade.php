@@ -70,105 +70,30 @@
 
 
 @section("scripts")
-<script type="text/javascript" src="/js/verifAccueilConnectJquery.js"></script>
+	<script type="text/javascript" src="/js/verifAccueilConnectJquery.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	
 
 	<!--Plugin Jquery Tag-->
-	<script type="text/javascript" src="/js/tagging.min.js"></script>
-	
+	<script type="text/javascript" src="/js/tagging.min.js"></script>	
 	<script type="text/javascript">
 		$("#chouchou").tagging();
 	</script>
 
 	<!--plugin notif-->
 	<script src="/js/jquery.msgPop.js"></script>
-	<script type="text/javascript">
+	<script type="text/javascript" src="/js/notifByAmand.js"></script>
 		
-			// Set to true to use full width mode
-			MsgPop.displaySmall = true;
-
-			// Custom the postion
-			MsgPop.position = "top-right";
-
-
-
-			// Call the plugin
-			$("#notification").click(function(){
-				var image=$(".img-responsive header_avatar");
-				MsgPop.open({
-					// Options
-					Type:  "success",
-					Content:"<div><img src='/images/merlin.jpg'> Merlin à liker votre post</div>",
-					//AutoClose:false,
-				});	
-			});
-	</script>
+			
 
 	<!--Plugin Scroll Up -->
 	<script type="text/javascript" src="/js/jquery.scrollUp.min.js"></script>
-	<script>
-        $(function () {
-            $(function () {
-                    $.scrollUp({
-                        animation: 'fade',
-                        activeOverlay: '#00FFFF',
-                        scrollImg: {
-                            active: true,
-                            type: 'background',
-                            src: 'images/top.png'
-                        }
-                    });
-                });
-                $('#scrollUpTheme').attr('href', '/css/styles.css');          
-        });
+	<script type="text/javascript" src="/js/scrollUpByAlex.js"></script>
+     
+     <!--Plugin autocomplete -->   
+	<script type="text/javascript" src="/js/autocompletByLoic.js"></script>
+		
 
-		var tags = [
-	      "ActionScript",
-	      "AppleScript",
-	      "Asp",
-	      "BASIC",
-	      "C",
-	      "C++",
-	      "Clojure",
-	      "COBOL",
-	      "ColdFusion",
-	      "Erlang",
-	      "Fortran",
-	      "Groovy",
-	      "Haskell",
-	      "Java",
-	      "JavaScript",
-	      "Lisp",
-	      "Perl",
-	      "PHP",
-	      "Python",
-	      "Ruby",
-	      "Scala",
-	      "Julie",
-	      "Cheval",
-	      "Jazz",
-	      "Obcheck",
-	      "Amandine",
-	      "Loïc",
-	      "Alexandre",
-	      "Pokemon",
-	      "Scheme"
-	    ];
-		$( ".type-zone" ).autocomplete({
-	  		source: function( request, response ) {
-			var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
-			response( $.grep( tags, function( item ){
-				return matcher.test( item );
-			}) );
-	     }
-	    });
-</script>
-
-@yield('script_co')
-
-
-
-
+	@yield('script_co')
 
 @endsection
