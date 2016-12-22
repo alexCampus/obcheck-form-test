@@ -24,7 +24,7 @@
 					<a class="btn btn-default btn-xs pull-right" href="#">Supprimer</a>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12">
-					<p><a href="create_event.html" class="btn btn-default btn-lg active" role="button" aria-pressed="true">Créer un événement</a></p>
+					<p><a href="/evenements/nouveau" class="btn btn-default btn-lg active" role="button" aria-pressed="true">Créer un événement</a></p>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<h2>Je Participe</h2>

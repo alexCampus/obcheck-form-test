@@ -257,7 +257,7 @@ header {
 	background-image:linear-gradient(to bottom, #BDC0C6 ,#fff 100%);
 	padding: 1%;
 }
- header .vcenter {
+ .vcenter {
  	padding-right: 0;
     display: inline-block;
     vertical-align: middle;
