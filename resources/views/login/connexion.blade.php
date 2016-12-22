@@ -13,13 +13,13 @@
 						   	<form action="http://campus-numerique-in-the-alps.com/formulaire/index.php"  method="post"  onsubmit="return verifFormConnexion(this)">
 								<div class="form-group">
 								 	<label for="pseudo_connexion">Pseudo:</label>
-								    <input type="text" class="form-control" name="pseudo_connexion"  placeholder="Pseudo" id="pseudo_connexion" onBlur="verifPseudo(this)">
+								    <input type="text" class="form-control" name="pseudo_connexion"  placeholder="Pseudo" id="pseudo_connexion" required  onBlur="verifPseudo(this)">
 								    <div class="error" id="alert_pseudo_connexion"></div>
 								 </div>
 								 <div class="form-group">
 								    <label for="pwd_connexion">Mot de passe:</label>
-								    <input type="password" class="form-control" name="pwd_connexion"  placeholder="mot de passe" id="pwd_connexion" onBlur="verifPassword(this)">
-								    <div class="error" id="alert_pwd_connexion"></div>
+								    <input type="password" class="form-control" name="pwd_connexion"  placeholder="mot de passe" id="pwd_connexion" required onBlur="verifPassword(this)">
+								    <div class="error" id="alert_password"></div>
 								 </div>
 								 <div class="checkbox">
 								    <label>

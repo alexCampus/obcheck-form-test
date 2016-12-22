@@ -152,11 +152,11 @@ function verifPassword(element) {
 			var chiffre = /[0-9]/
 			if (!(maj.test(element.value) && min.test(element.value) && chiffre.test(element.value) && controleLength(element.value,8,25))) {
 				document.getElementById("alert_password").innerHTML="Vous devez avoir au moins une minuscule, une majuscule et un chiffre et doit faire entre 8 et 25 caractères.";
-				champ.className="form-control notok";
+				element.className="form-control notok";
 				document.getElementById("alert_password").className="error";
 			} else {
 				document.getElementById("alert_password").innerHTML="";
-				champ.className="form-control ok";
+				element.className="form-control ok";
 			}
 		}
 
@@ -231,7 +231,6 @@ function controleLength (string,min,max) {
 //Controle pseudo
 
 function verifPseudo (champ) {
-	console.log(champ);
 	var val = champ.value;
 	var min = 2;
 	var max = 20;
