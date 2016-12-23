@@ -22,7 +22,7 @@
 			</form>
 			<form action="http://campus-numerique-in-the-alps.com/formulaire/index.php" method="post" onsubmit="return verifForm(this)">						
 				<div class="form-group form-group-lg col-7">
-					<label for="pseudo">Modifier mon Pseudo
+					<label for="pseudo">Modifier mon pseudo
 						<input class="form-control" name="pseudo" required id="pseudo" type="text" placeholder="pseudo"  onblur="verifLettre(this)">									
 					</label>
 					<div class="error" id="alert_pseudo"></div>

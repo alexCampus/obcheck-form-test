@@ -112,7 +112,7 @@ h2 {
 
 a {
 	color:#404276;
-	font-size:14pt;
+	font-size:12pt;
 }
 
 a hover {
@@ -383,6 +383,17 @@ iframe{
 	text-align:left;
 	
 }
+
+#widget_ma_page{
+	width: 250px;
+	height:400px;
+}
+
+#profil_modification{
+	padding-bottom: 3px;
+
+}
+
 .widget button{
 	margin-top:10%;
 }
@@ -440,14 +451,24 @@ iframe{
 	border-radius: 8px;
 	background-image:linear-gradient(to bottom, #DEDFE2 ,#fff 100%);
 	margin-bottom: 50px;
+
 }
 .pseudo_info {
 	margin-bottom: 10%;	
-
-
+	padding-bottom: 10%;
 }
+
+#btn_modif_photo{
+	margin-top:20px;
+}
+
+#btn_modif_info{
+	margin-top: 15px;
+}
+
 .pseudo_widget {
-	padding-top:10%; 
+	padding-top:10%;
+	font-size: 30; 
 }
 .search_bar {
 	margin-top: 2%;
