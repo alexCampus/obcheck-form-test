@@ -13,7 +13,7 @@ function verifLettre(champ){
 	var max = 255;
 	var min = 2;
 	var val = champ.value;
-	regex = new RegExp("(^[a-zA-Z']{1})([a-zA-Z']+)(([\ \-])([a-zA-Z']{1})([a-zA-Z']*))?$","");
+	regex = new RegExp("^[a-zA-Z]*$");
 	
    if (val == "") {
 		document.getElementById("alert_"+champ.name).innerHTML="Le champs "+champ.name+" est vide !";
