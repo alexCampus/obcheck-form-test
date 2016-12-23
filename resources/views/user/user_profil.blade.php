@@ -12,24 +12,26 @@
     <div class=" bloc_fil_actu padding_1">
 		
 			<div class="pseudo_info">
-				<h4>Mes Informations Personnelles</h4>
-					<p> pseudo : Shaker</p>
+				<h2>Mes Informations Personnelles</h2>
+					<p> Pseudo : Shaker</p>
 					<p> Mon Email: Shaker@hotmail.fr </p>
 					<p> Ma date d'inscription: 06/10/2016 </p>
 					<p> Ma date de naissance: 14/09/1979</p>
 					<p> Ma ville : Grenoble</p>
 			</div>
 			<div class="pseudo_hobby">
-				<h4>Mes Hobbies</h4>
-				<ul class="list_user">
-					<li>Jazz</li>
-					<li>Kayak</li>
-					<li>Trail</li>
-					<li>Jeux vidéo</li>
-				</ul>
+				<h2>Mes Hobbies</h2>
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 form_connexion text-center">
+					<button class="btn btn-lg">Jazz</button>
+					<button class="btn btn-lg">Kayak</button>
+					<button class="btn btn-lg">Trail</button>
+					<button class="btn btn-lg">Jeux vidéos</button>
+				</div>
 
 				<!-- Trigger the modal with a button -->
-				<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Ajoutez de nouveaux Hobbies</button>
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 form_connexion text-center">
+						<button type="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#myModal">Ajoutez de nouveaux Hobbies</button>
+				</div>
 
 				<!-- Modal -->
 				<div id="myModal" class="modal fade" role="dialog">
@@ -64,5 +66,5 @@
 		</div>
 		<div class="clear"></div>
 	</div>
-@endsection    		
+@endsection 	
     		
