@@ -5,6 +5,12 @@
     src: url('../fonts/MonoglycerideBold.ttf');
 }
 
+/*couleurs
+	bleu : #697898;
+	orange foncé : #EF6253;
+	orange clair :#F9A198;
+*/
+
 .navbar-nav {
 	margin: 0;
 }
@@ -19,10 +25,6 @@ margin-bottom: 5%;
 }
 .fil_ariane a {
 	color: #FFF;
-}
-.imgNotif {
-	width: 50px;
-	height: 50px;
 }
 
 #complexity {
@@ -78,29 +80,44 @@ body {
 .notok {
 	border: 2px solid red;
 	background-color: #ffadad;
+	/*font-size:16pt;*/
 }
 .ok {
 	border : ;
 	background-color: #fff;
+	/*font-size:16pt;*/
 
 }
+
 
 h1 {
 	color: #404276;
 	text-decoration: none;
 }
 
+h4 {
+	color:#404276;
+	font-family: "MonoglycerideBold";
+    src: url('../fonts/MonoglycerideBold.ttf');
+    font-size: 18pt;
+}
+
+h2 {
+	color:#404276;
+	font-size: 30pt;
+	font-family: "MonoglycerideBold";
+    src: url('../fonts/MonoglycerideBold.ttf');
+    text-align: center;
+}
+
 a {
 	color:#404276;
-
+	font-size:14pt;
 }
 
 a hover {
 	color:#404276;
-}
 
-.glyphicon-globe {
-	margin :0;
 }
 
 .no_pad {
@@ -115,7 +132,7 @@ a hover {
 	width: 80%;
 	font-size: 20pt;
 	padding :50px;
-	margin-top: 35px;
+	margin-top: 50px;
 }
 
 .btn-default{
@@ -140,6 +157,17 @@ a hover {
 	text-shadow: none;
 }
 
+/* bouton se connecter*/
+.btn-connect {
+	margin-top: 50px;
+	margin-left: -15px;
+	margin-bottom: 50px;
+	font-size:16pt;
+	
+}
+
+
+
 .btn-warning{
 	color:#fff;
 	background-image:linear-gradient(to bottom, #ef6253 ,#FF7A6B 100%);
@@ -153,6 +181,8 @@ a hover {
 	background-color:#f0ad4e; 
 	color:#fff;
 }
+
+
 
 .thumbnail {
 	background: none;
@@ -243,9 +273,7 @@ background:#596888 ;
 	padding-top:15px;
 }
 
-.fa-search{
-	min-height: 20px;
-}
+
 
 #categorie {
 	height: 50px;
@@ -253,6 +281,7 @@ background:#596888 ;
 	border-radius: 6px;
 
 }
+
 
 /*-------Carousel------*/
 .carousel-inner > .item > img,
@@ -274,7 +303,7 @@ background:#596888 ;
 
 /*-------Header -------*/
 .logo {
-	width: 75%;
+	width: 100%;
 }
 
 .logo2 {
@@ -294,7 +323,6 @@ header {
     vertical-align: middle;
     float: none;
 }
-
 
 header h1{	
 	font-family: "MonoglycerideBold";
@@ -326,9 +354,8 @@ header h2{
 	font-size: 2.2em;
 	color:#404276;
 }
-.index_text ul {
+.index_text li {
 	list-style-type: none;
-	padding: 0;
 }
 
 
@@ -363,6 +390,12 @@ iframe{
 	margin-right: 3%;
 	position:relative;
 }
+/* checkbox remerber-me*/
+.checkbox {
+	margin-left: -15px;
+	font-size: 14pt;
+}
+
 .hobby_name{
 	width: 100%;
 }
@@ -407,6 +440,8 @@ iframe{
 }
 .pseudo_info {
 	margin-bottom: 10%;	
+
+
 }
 .pseudo_widget {
 	padding-top:10%; 
@@ -418,9 +453,15 @@ iframe{
 	margin-bottom: 10%;
 }
 
+/* form connecte-toi*/
+.form-control{
+	font-size:16pt;
+}
+
 .background_black {
 	background-color: #000;
 }
+
 
 /* --- Publication----*/
 
@@ -430,7 +471,7 @@ iframe{
 	background-image:linear-gradient(to bottom, #D8DADD , ); 
 	border-radius: 8px;
 	min-width: 545px;
-	padding: 2%;
+	padding: 10%;
 }
 .bloc_fil_actu form, .bloc_fil_actu ul{
 	padding: 4%;
@@ -543,6 +584,7 @@ iframe{
 	margin-right: 1%;
 }
 .notif {
+	margin: 5%;
 	padding: 3%;
 }
 .notif a{

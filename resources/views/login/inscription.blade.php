@@ -10,32 +10,32 @@
 
 		<!--Form Inscription-->
 	   	<div class="row">
-	   		<div class="col-lg-offset-2 col-lg-7 col-md-12 col-sm-12 col-xs-12">
-	   			<div class="bloc_fil_actu">
-				   	<div class="col-lg-offset-1 col-lg-8 col-md-8 col-sm-8 col-xs-8 form_connexion">
-					   	<fieldset class="col-md-offset-5 col-sm-offset-5 col-xs-offset-5">
-					   	<h2>Inscription</h2>		   		
-						   	<form action="http://campus-numerique-in-the-alps.com/formulaire/index.php" method="post" onsubmit="return verifFormInscription(this)">
+	   		<div class="col-lg-offset-2 col-md-offset-2 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+		   		<div class=" bloc_fil_actu">
+				   	<div class="col-lg-offset-4 col-lg-8 col-md-8 col-sm-8 col-xs-8 form_connexion">
+					   	<fieldset>
+					   	<h2>Inscris-toi</h2>		   		
+						   	<form class="form-horizontal" role="form" action="http://campus-numerique-in-the-alps.com/formulaire/index.php" method="post" onsubmit="return verifFormInscription(this)">
 						   		<div class="form-group">
-								 	<label for="pseudo_inscription">Pseudo:</label>
+								 	<label for="pseudo_inscription" class="col-sm-2 control-label""></label>
 								    <input type="text" class="form-control" name="pseudo" required  placeholder="Pseudo" id="pseudo" onblur="verifPseudo(this)">
 								    <div class="error" id="alert_pseudo"></div>
 								</div>
 								<div class="form-group">
-									<label for="email">Adresse Email:</label>
-									<input type="email" class="form-control" name="email" required  placeholder="email" id="email" onblur="verifEmail(this)">
+									<label for="email" class="col-sm-2 control-label"></label>
+									<input type="email" class="form-control" name="email" required  placeholder="Email" id="email" onblur="verifEmail(this)">
 									<div class="error" id="alert_email"></div>
 								</div>
 								<div class="form-group">
-									<label for="birthday">Date de naissance:</label>
-									<input type="text" class="form-control" name="birthday" required   id="date" onblur="verifDate(this)">
+									<label for="birthday" class="col-sm-2 control-label"></label>
+									<input type="text" class="form-control" name="birthday" required placeholder="Date de naissance"  id="date" onblur="verifDate(this)">
 									<div class="error" id="alert_birthday"></div>
 								</div>
 								<div id="complexify">
 									<div classs="form">
 										<div class="form-group">
-											<label for="password">Mot de passe :</label>
-											<input type="password" name="pwd_inscription" required class="form-control" id="password" id="pwd_inscription" onblur="verifPassword(this)" onblur="corrMdpControle(this, getElementById('pwd_confirmation'))" placeholder="mot de passe">
+											<label for="password" class="col-sm-2 control-label"></label>
+											<input type="password" name="pwd_inscription" required class="form-control" id="password" id="pwd_inscription" onblur="verifPassword(this)" onblur="corrMdpControle(this, getElementById('pwd_confirmation'))" placeholder="Mot de passe">
 										</div>
 									</div>
 									<div>
@@ -49,11 +49,11 @@
 									<div class="error" id="alert_password"></div>
 								</div>
 								<div class="form-group">
-								    <label for="pwd_confirmation">Confirmation Mot de passe:</label>
+								    <label for="pwd_confirmation" class="col-sm-2 control-label"></label>
 								    <input type="password" class="form-control" name="pwd_confirmation" required  placeholder="Confirmation mot de passe" id="pwd_confirmation" onblur="corrMdpControle(this, getElementById('password'))">
 								    <div class="error" id="alert_pwd_confirmation"></div>
 								</div>				 
-								<input type="submit" class="btn btn-default" value="Connexion">
+								<input type="submit" class="btn btn-connect btn-default" value="S'inscrire">
 							</form>
 							<a href="/toto">Connexion accueil connecté</a>
 						</fieldset>
@@ -61,10 +61,10 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-3 col-lg-6 col-md-8 col-sm-8 col-xs-12 form_connexion">
-							<h2>Inscription via les Réseaux Sociaux</h2>					
-							<button class="btn btn-sm btn-default">Connexion <i class="fa fa-twitter-square"></i></button>
-							<button class="btn btn-sm btn-primary">Connexion <i class="fa fa-facebook-square"></i></button>
-							<button class="btn btn-sm btn-danger">Connexion <i class="fa fa fa-google-plus-square"></i></button>
+							<h2>Inscription via</h2>					
+							<button class="btn btn-sm btn-default">Twitter<i class="fa fa-twitter-square"></i></button>
+							<button class="btn btn-sm btn-primary">Facebook<i class="fa fa-facebook-square"></i></button>
+							<button class="btn btn-sm btn-danger">Google+<i class="fa fa fa-google-plus-square"></i></button>
 						</div>
 					</div>
 				</div>
@@ -75,12 +75,6 @@
 
 @section('scripts')
 	<script type="text/javascript" src="/js/jquery-ui.js"></script>
-	<!--Progress Bar Password-->
-	<script src="js/jquery.complexify.banlist.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/jquery.complexify.min.js"></script>
-	<script src="js/progressBarPassword.js" type="text/javascript"></script>
-
-	<!--datepicker-->
 	<script>
 
 		var datePickerOptions = {
