@@ -12,7 +12,7 @@
 	   	<div class="row">
 	   		<div class="col-lg-offset-2 col-md-offset-2 col-lg-7 col-md-7 col-sm-12 col-xs-12">
 		   		<div class=" bloc_fil_actu">
-				   	<div class="col-lg-offset-4 col-lg-8 col-md-8 col-sm-8 col-xs-8 form_connexion">
+				   	<div class="col-lg-offset-4 col-lg-8 col-md-8 col-sm-8 col-xs-8 form_connexion text-center">
 					   	<fieldset>
 					   	<h2>Inscris-toi</h2>		   		
 						   	<form class="form-horizontal" role="form" action="http://campus-numerique-in-the-alps.com/formulaire/index.php" method="post" onsubmit="return verifFormInscription(this)">
@@ -53,18 +53,18 @@
 								    <input type="password" class="form-control" name="pwd_confirmation" required  placeholder="Confirmation mot de passe" id="pwd_confirmation" onblur="corrMdpControle(this, getElementById('password'))">
 								    <div class="error" id="alert_pwd_confirmation"></div>
 								</div>				 
-								<input type="submit" class="btn btn-connect btn-default" value="S'inscrire">
+								<input type="submit" class="btn btn-connect btn-lg btn-default" value="S'inscrire">
 							</form>
 							<a href="/toto">Connexion accueil connecté</a>
 						</fieldset>
 
 					</div>
 					<div class="row">
-						<div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-3 col-lg-6 col-md-8 col-sm-8 col-xs-12 form_connexion">
-							<h2>Inscription via</h2>					
-							<button class="btn btn-sm btn-default">Twitter<i class="fa fa-twitter-square"></i></button>
-							<button class="btn btn-sm btn-primary">Facebook<i class="fa fa-facebook-square"></i></button>
-							<button class="btn btn-sm btn-danger">Google+<i class="fa fa fa-google-plus-square"></i></button>
+						<div class="col-lg-offset-4 col-lg-8 col-md-8 col-sm-8 col-xs-8 form_connexion text-center">
+							<h2>Inscris-toi via</h2>					
+							<button class="btn btn-lg btn-default"><i class="fa fa-twitter-square"></i></button>
+							<button class="btn btn-lg btn-default"><i class="fa fa-facebook-square"></i></button>
+							<button class="btn btn-lg btn-default"><i class="fa fa fa-google-plus-square"></i></button>
 						</div>
 					</div>
 				</div>

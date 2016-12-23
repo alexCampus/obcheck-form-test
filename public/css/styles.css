@@ -157,16 +157,19 @@ a hover {
 	text-shadow: none;
 }
 
-/* bouton se connecter*/
-.btn-connect {
+/*bouton se connecter*/
+
+.btn-lg {
 	margin-top: 50px;
-	margin-left: -15px;
+	margin-left: 20px;
 	margin-bottom: 50px;
-	font-size:16pt;
+
 	
 }
 
-
+.text-center {
+	text-align: center;
+}
 
 .btn-warning{
 	color:#fff;
