@@ -43,7 +43,7 @@
 					  	<div class="col-lg-offset-3 col-lg-7 search_bar">
 					    	<div class="input-group">
 						      	<span class="input-group-btn">
-						        <input type="submit" class="btn btn-default" value=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						        <button class="btn btn-default" type="submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
 						      	</span>
 				     			<input name="barre_recherche" type="text" class="form-control" id="barre_recherche" placeholder="Recherche...">
 				     			

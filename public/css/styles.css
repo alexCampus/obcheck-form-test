@@ -243,7 +243,9 @@ background:#596888 ;
 	padding-top:15px;
 }
 
-
+.fa-search{
+	min-height: 20px;
+}
 
 #categorie {
 	height: 50px;

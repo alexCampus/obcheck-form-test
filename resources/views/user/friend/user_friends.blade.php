@@ -14,7 +14,7 @@
 					<div class="col-lg-12 search_bar">
 			    		<div class="input-group">
 				      		<span class="input-group-btn">
-				        		<button class="btn btn-default " type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+				        		<button class="btn btn-default" type="submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
 				      		</span>
 		     				<input type="text" class="form-control formulaire_userfriends" placeholder="Recherche..." onblur="verifSearchBar(this)">
 		     				<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Rajouter un ami</button>
