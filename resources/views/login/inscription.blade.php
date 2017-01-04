@@ -75,6 +75,12 @@
 
 @section('scripts')
 	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	<!--Progress Bar Password-->
+	<script src="js/jquery.complexify.banlist.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.complexify.min.js"></script>
+	<script src="js/progressBarPassword.js" type="text/javascript"></script>
+
+	<!--datepicker-->
 	<script>
 
 		var datePickerOptions = {
