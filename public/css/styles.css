@@ -11,6 +11,10 @@
 	orange clair :#F9A198;
 */
 
+.widget ul {
+	padding : 1% 2%;
+}
+
 .navbar-nav {
 	margin: 0;
 }
@@ -495,27 +499,29 @@ iframe{
 	background-image:linear-gradient(to bottom, #D8DADD , ); 
 	border-radius: 8px;
 	min-width: 545px;
-	padding: 10%;
+	padding: 5%;
 }
-.bloc_fil_actu form, .bloc_fil_actu ul{
-	padding: 4%;
-}
+
 .publication {
 	margin-top: 2%;
+}
+
+.pseudo_ava {
+	padding: 0%;
+	text-align: center;
+	padding-left: auto;
+    padding-right: auto;
 }
 
 .avatar_publication {
 	width: 100%;
 	border:1px solid #ddd;
-	float: left;
-	margin-right:3%; 
 	border-radius: 5px;
 	
 }
 .avatar_container {
 	width: 100px;
 	height: 100px;
-	float: left;
 	background-color: #fff;
 }
 .avatar_user_friends {
