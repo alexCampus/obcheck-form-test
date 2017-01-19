@@ -15,14 +15,14 @@ class CreateReceiverTable extends Migration
     {
         Schema::create('receiver',function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('id_message')->unsigned();
-            $table->foreign('id_message')
+            $table->integer('messages_id')->unsigned();
+            $table->foreign('messages_id')
                   ->references('id')
                   ->on('messages')
                   ->onDelete('restrict')
                   ->onUpdate('restrict');
-            $table->integer('id_user')->unsigned();
-            $table->foreign('id_user')
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')
                   ->references('id')
                   ->on('users');
         });
@@ -36,8 +36,8 @@ class CreateReceiverTable extends Migration
     public function down()
     {
         Schema::table('receiver',function(Blueprint $table) {
-            $table->dropForeign('receiver_id_message_foreign');
-            $table->dropForeign('receiver_id_user_foreign');
+            $table->dropForeign('receiver_messages_id_foreign');
+            $table->dropForeign('receiver_user_id_foreign');
 
         });
         

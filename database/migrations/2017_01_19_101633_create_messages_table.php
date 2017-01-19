@@ -16,8 +16,8 @@ class CreateMessagesTable extends Migration
         Schema::create('messages',function(Blueprint $table) {
             $table->increments('id');
             $table->text('content');
-            $table->integer('id_sender')->unsigned();
-            $table->foreign('id_sender')
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')
                   ->references('id')
                   ->on('users')
                   ->onDelete('restrict')
@@ -34,7 +34,7 @@ class CreateMessagesTable extends Migration
     public function down()
     {
         Schema::table('messages',function(Blueprint $table) {
-            $table->dropForeign('messages_id_sender_foreign');
+            $table->dropForeign('messages_user_id_foreign');
         });
         
         Schema::drop('messages');

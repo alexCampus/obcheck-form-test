@@ -3,7 +3,7 @@
 @section('title', 'messagerie')
  	
 @section('messagingClass')
-	{{ $classActive }}
+
 @endsection
 
 @section('content')
@@ -52,7 +52,11 @@
 					</form>	
     			</div>
     			
-    			<div class="received_message">
+    			@foreach($messages as $message)
+    				<p> {{ $message->content }} crée par {{ $message->user ['pseudo']}}  </p>
+    			@endforeach
+
+    			<!-- <div class="received_message">
     				<h4>Messages reçus</h4>
     				<div class="message">
     					<img src="/images/chaton.jpg" alt="Avatar" class="avatar_message" />
@@ -95,7 +99,7 @@
 	    					On se voit demain ?
     					</div>
     				</div>
-    			</div>
+    			</div> -->
 			</div>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-5 pub_widget">

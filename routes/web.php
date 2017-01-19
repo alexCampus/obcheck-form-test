@@ -43,9 +43,8 @@ Route::get('/reinitialisation', function () {
     return view('login.oubli_mot_de_passe');
 });
 
-Route::get('/messagerie', function () {
-    return view('user.user_messaging', ['classActive' => 'active']);
-});
+Route::get('/messagerie','MessagesController@index');
+
 
 Route::get('/historique', function () {
     return view('user.user_historique', ['classActive' => 'active']);
@@ -79,9 +78,7 @@ Route::group(['prefix' => 'evenements'], function(){
 
 //route par group pour amis
 Route::group(['prefix' => 'amis'], function(){
-    Route::get('/', function () {
-        return view('user.friend.user_friends', ['classActive' => 'active']);
-    });
+    Route::get('/', 'FriendsController@index');
 
     Route::get('/{pseudo_amis}', function ($pseudo_amis) {
         return view('user.friend.visit_friends', ['name' => $pseudo_amis]);

@@ -2,15 +2,18 @@
 @section('title','amis')
 
 @section('friendClass')
-	{{$classActive}}
+
 @endsection
 *		
 @section('user_content')	   
 		
 	<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+
 		<div class=" bloc_fil_actu padding_1">
+		
+		
 			<div class="row">
-				<form action="http://campus-numerique-in-the-alps.com/formulaire/index.php" method="post">
+				<form action="" method="post">
 					<div class="col-lg-12 search_bar">
 			    		<div class="input-group">
 				      		<span class="input-group-btn">
@@ -22,22 +25,44 @@
 		    		</div>
 		    	</form>	
 			</div>
+
+		@foreach($friends1 as $friend1)
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 align_bouton_friends">
 				<div class="dropdown">
-					<a href="/amis/merlin">Merlin</a>
+					<a href="/amis/{{ $friend1->user2['pseudo']}} ">{{ $friend1->user2['pseudo']}} </a>
 					<div>
 					  	<button type="button" class="btn btn-ami dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    	<img src="/images/merlin.jpg" class="img-responsive avatar_user_friends" alt="photo_avatar"> <span class="caret"></span>
+					    	<img src="{{ $friend1->user2['photo']}}" class="img-responsive avatar_user_friends" alt="photo_avatar"> <span class="caret"></span>
 					  	</button>
 					  	<ul class="dropdown-menu notif">
-					  		<li><a href="/amis/merlin">Accéder à son historique</a></li>
+					  		<li><a href="/amis/{{ $friend1->user2['pseudo']}} ">Accéder à son historique</a></li>
 					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Suivre les actus</li>
 					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Voir les événements</li>
 					    	<li><a href="#">Retirer de la liste d'amis</a></li>
 					  	</ul>
 					</div>
 				</div>
-			</div>						 
+			</div>	
+		@endforeach
+		@foreach($friends2 as $friend2)
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 align_bouton_friends">
+				<div class="dropdown">
+					<a href="/amis/{{ $friend2->user1['pseudo']}} ">{{ $friend2->user1['pseudo']}} </a>
+					<div>
+					  	<button type="button" class="btn btn-ami dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    	<img src="{{ $friend2->user1['photo']}}" class="img-responsive avatar_user_friends" alt="photo_avatar"> <span class="caret"></span>
+					  	</button>
+					  	<ul class="dropdown-menu notif">
+					  		<li><a href="/amis/{{ $friend2->user1['pseudo']}} ">Accéder à son historique</a></li>
+					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Suivre les actus</li>
+					    	<li><input type="checkbox" value="" class="checkbox_hobby_widget">Voir les événements</li>
+					    	<li><a href="#">Retirer de la liste d'amis</a></li>
+					  	</ul>
+					</div>
+				</div>
+			</div>	
+		@endforeach						 
+			<!--
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 align_bouton_friends">	
 				<div class="dropdown">
 					<a href="/amis/merlin">Chaton</a>
@@ -87,7 +112,9 @@
 				</div>
 			</div>
 			<div class="clear"></div>
+			-->
 		</div>
+
 	</div>
     		  
 @endsection
