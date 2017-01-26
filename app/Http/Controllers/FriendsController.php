@@ -9,6 +9,14 @@ use App\Friends;
 
 class FriendsController extends Controller
 {
+
+
+	public function __construct()
+	{
+ 	   $this->middleware('auth');
+	}
+
+	
     public function index() 
 	{
 		$friends1 = Friends::where('user_id_1','=','3')->get();

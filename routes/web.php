@@ -32,11 +32,11 @@ Route::get('/about', function () {
 });
 
 Route::get('/connexion', function () {
-    return view('login.connexion');
+    return view('auth.login');
 });
 
 Route::get('/inscription', function () {
-    return view('login.inscription');
+    return view('auth.register');
 });
 
 Route::get('/reinitialisation', function () {
@@ -48,32 +48,30 @@ Route::get('/messagerie','MessagesController@index');
 
 Route::get('/historique', function () {
     return view('user.user_historique', ['classActive' => 'active']);
-});
+})->middleware('auth');
 
 //route par group pour profil
 Route::group(['prefix' => 'profil'], function(){
-    Route::get('/', function () {
-        return view('user.user_profil', ['classActive' => 'active']);
-    });
+    Route::get('/{pseudo}', 'MessagesController@show');
 
-    Route::get('/modification', function () {
-        return view('user.info_user');
-    });
+    Route::get('/{pseudo}/update', 'MessagesController@profil');
+
+    Route::put('/{id}/update', 'MessagesController@update');
 });
 
 //route par group pour evenements
 Route::group(['prefix' => 'evenements'], function(){
     Route::get('/', function () {
         return view('user.event.user_events', ['classActive' => 'active']);
-    });
+    })->middleware('auth');
 
     Route::get('/nouveau', function () {
         return view('user.event.create_event', ['classActive' => 'active']);
-    });
+    })->middleware('auth');
 
     Route::get('/{id}', function ($id) {
         return view('user.event.visit_user_event', ['id' => $id]);
-    });
+    })->middleware('auth');
 });
 
 //route par group pour amis
@@ -82,7 +80,7 @@ Route::group(['prefix' => 'amis'], function(){
 
     Route::get('/{pseudo_amis}', function ($pseudo_amis) {
         return view('user.friend.visit_friends', ['name' => $pseudo_amis]);
-    });
+    })->middleware('auth');
 });
 
 //route par group pour admin
@@ -90,20 +88,26 @@ Route::group(['prefix' => 'admin'], function() {
 
     Route::get('post', function () {
         return view('admin.admin_page_posts', ['classActive' => 'active']);
-    });
+    })->middleware('auth');
 
     Route::get('events', function () {
         return view('admin.admin_page_events', ['classActive' => 'active']);
-    });
+    })->middleware('auth');
 
     Route::get('tags', function () {
         return view('admin.admin_page_tags', ['classActive' => 'active']);
-    });
+    })->middleware('auth');
 
 });
 
-Route::get('/{pseudo}', function ($pseudo) {
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+/*Route::get('/toto', function () {
    return view('user.accueil_connecte', ['classActive' => 'active']);    
-})->where('pseudo', '^[A-Za-z0-9]{1,20}$');
+})->where('pseudo', '^[A-Za-z0-9]{1,20}$');*/
+
+
 
 

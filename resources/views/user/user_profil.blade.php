@@ -3,21 +3,25 @@
 @section('title','profil')
 
 @section('profilClass')
-	{{ $classActive }}
+	
 @endsection
 
 @section('user_content')
 
 <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">		
     <div class=" bloc_fil_actu padding_1">
-		
 			<div class="pseudo_info">
 				<h2>Mes Informations Personnelles</h2>
-					<p> Pseudo : Shaker</p>
-					<p> Mon Email: Shaker@hotmail.fr </p>
-					<p> Ma date d'inscription: 06/10/2016 </p>
-					<p> Ma date de naissance: 14/09/1979</p>
-					<p> Ma ville : Grenoble</p>
+					<p> Pseudo : {{ Auth::user()->pseudo }} </p>
+					<p> Mon prenom : {{ Auth::user()->firstname }}</p>
+					<p> Mon nom : {{ Auth::user()->lastname }}</p>
+					<p> Mon numero de téléphone : (+33){{ Auth::user()->phonenumber }}</p>
+					<p> Ma ville : {{ Auth::user()->city }}</p>
+					<p> Mon Email: {{ Auth::user()->email }} </p>
+					<p> Ma description : {{ Auth::user()->description }} </p>
+					<p> Ma date d'inscription: {{ Auth::user()->created_at->format('d/m/Y') }} </p>
+					<p> Ma date de naissance: {{ Auth::user()->birthdate->format('d/m/Y') }}</p>
+					
 			</div>
 			<div class="pseudo_hobby">
 				<h2>Mes Hobbies</h2>

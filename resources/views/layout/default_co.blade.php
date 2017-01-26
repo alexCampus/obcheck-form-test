@@ -16,19 +16,31 @@
 				<div class="avatar col-lg-2 col-md-2 col-sm-2 col-xs-2 btn-group vcenter">
 					<div class='btn-group'>
 					  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    <img src="/images/shaker.jpg" class="img-responsive header_avatar" alt="photo_avatar"> <span class="caret"></span>
+					    <img src="@if (Auth::user()->photo)
+					    				{{ Auth::user()->photo }}
+					    		  @else
+					    		  /images/avatar-vide.jpeg
+					    @endif" class="img-responsive header_avatar" alt="photo_avatar"> <span class="caret"></span>
 					  	</button>
 					  	<ul class="dropdown-menu">
-					    	<li><a href="/profil">Mon profil</a></li>
+					    	<li><a href="/profil/{{ Auth::user()->pseudo }}">Mon profil</a></li>
 					    	<li><a href="/evenements">Mes événements</a></li>
 					    	<li><a href="/historique">Mon historique</a></li>
 					    	<li><a href="/amis">Mes amis</a></li>
 					    	<li><a href="/evenements/nouveau">Nouvel évènement</a></li>
+
+				    		<li><a href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+							<form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        </li>
+					    
+					    	
 					  	</ul>
 				  	</div>
 					<span class="col-lg-12 glyphicon glyphicon-globe notif" aria-hidden="true" id="notification"><a href="#">Notifications</a></span>
 					<span class="col-lg-12 glyphicon glyphicon-envelope notif" aria-hidden="true"><a href="/messagerie">Messages</a></span>
-					<a href="/" class="btn btn-default btn-logout" role="button">Se déconnecter</a>
+					<a href="{{ url('/logout') }}" class="btn btn-default btn-logout" role="button">Se déconnecter</a>
 				</div>
 				
 @endsection
@@ -56,13 +68,19 @@
 		          </ul>
 		          <ul class="nav navbar-nav navbar-right">
 		            <li class="dropdown">
-		              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mon profil <span class="caret"></span></a>
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->pseudo }} <span class="caret"></span></a>
 		              <ul class="dropdown-menu">
-				    	<li><a href="/profil">Mon profil</a></li>
+				    	<li><a href="/profil/{{ Auth::user()->pseudo }}">Mon profil</a></li>
 				    	<li><a href="/evenements">Mes événements</a></li>
 				    	<li><a href="/historique">Mon historique</a></li>
 				    	<li><a href="/amis">Mes amis</a></li>
 				    	<li><a href="/evenements/nouveau">Nouvel évènement</a></li>
+				    	
+			    		<li><a href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+							<form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        </li>
 				  	</ul>
 		            </li>
 		          </ul>

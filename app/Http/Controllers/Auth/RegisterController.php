@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Carbon\Carbon;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
@@ -48,7 +49,8 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
+            'pseudo' => 'required|max:255',
+            'birthdate' => 'required',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
         ]);
@@ -63,7 +65,8 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'pseudo' => $data['pseudo'],
+            'birthdate' => date('Y-m-d', strtotime($data['birthdate'])),
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);

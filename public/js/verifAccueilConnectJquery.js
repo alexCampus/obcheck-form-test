@@ -74,7 +74,7 @@ $(function() {
 
 
 	//test du submit
-	$('form').submit(function(){
+	/*$('form').submit(function(){
 		$input = $(this).find('textarea');
 		$test = checkComment($input);
 		
@@ -82,7 +82,7 @@ $(function() {
 			return true;
 		} 
 		return false;		
-	});
+	});*/
 })
 
 

@@ -8,6 +8,8 @@ class Messages extends Model
 {
     protected $table="messages";
 
+    protected $dates = ['birthdate'];
+
     public function user() 
     {
     	return $this->belongsTo(\App\User::class);
